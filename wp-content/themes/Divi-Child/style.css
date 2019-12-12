@@ -2424,7 +2424,7 @@ body #lh_mobile_nav_menu {
 
 /*** Global section styles ***/
 .lh-section {
-    margin: 100px auto;
+    margin: 100px auto!important;
     padding: 0 !important;
 }
 

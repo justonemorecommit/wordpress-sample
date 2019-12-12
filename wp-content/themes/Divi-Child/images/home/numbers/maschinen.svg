@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="277px" height="249px" viewBox="0 0 277 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>maschinen</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="maschinen" transform="translate(0.000000, 3.000000)">
+            <polygon id="Path" fill="#F8D559" points="0.975 32.642 141.075 43.573 227.78 55.661 276.722 154.351 178.259 245.703 0.952 207.291 21.601 127.637"></polygon>
+            <g id="Group" transform="translate(81.000000, 0.000000)" stroke="#303030" stroke-width="6.4">
+                <path d="M9.8,0.747 C4.4980664,0.747 0.2,5.0450664 0.2,10.347 L0.2,36.2 C0.2,41.5019336 4.4980664,45.8 9.8,45.8 L32.2,45.8 C37.5019336,45.8 41.8,41.5019336 41.8,36.2 L41.8,10.347 C41.8,5.0450664 37.5019336,0.747 32.2,0.747 L9.8,0.747 Z" id="Path"></path>
+                <rect id="Rectangle" x="9.2" y="47.2" width="23.6" height="12.6" rx="5.6"></rect>
+                <path d="M21.5,70 C27.833,66.979 31,64.617 31,62.915 C31,60.362 12,60.362 12,62.915 C12,64.617 15.167,66.979 21.5,70 Z" id="Path"></path>
+                <rect id="Rectangle" x="22.2" y="73.2" width="1" height="19.6" rx="0.5"></rect>
+                <rect id="Rectangle" transform="translate(34.348528, 90.848528) rotate(45.000000) translate(-34.348528, -90.848528) " x="33.8485281" y="87.0485281" width="1" height="7.6" rx="0.5"></rect>
+                <rect id="Rectangle-Copy-13" transform="translate(11.040559, 90.848528) scale(-1, 1) rotate(45.000000) translate(-11.040559, -90.848528) " x="10.5405592" y="87.0485281" width="1" height="7.6" rx="0.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

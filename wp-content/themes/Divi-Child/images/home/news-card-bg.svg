@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="42px" viewBox="0 0 65 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="news/item" transform="translate(-335.000000, -151.000000)" fill="#F8D559">
+            <g id="News-item" transform="translate(6.000000, 7.000000)">
+                <g id="Mask" transform="translate(324.000000, 131.000000)">
+                    <g id="Group">
+                        <polygon id="Path" transform="translate(37.500000, 34.000000) rotate(-180.000000) translate(-37.500000, -34.000000) " points="5 55 53.0791346 44.8091174 70 13 5 13"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

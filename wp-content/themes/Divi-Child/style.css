@@ -2424,7 +2424,7 @@ body #lh_mobile_nav_menu {
 
 /*** Global section styles ***/
 .lh-section {
-    margin: 100px auto!important;
+    margin: 100px auto;
     padding: 0 !important;
 }
 
@@ -2531,7 +2531,6 @@ body #lh_mobile_nav_menu {
 /*** One & two column text */
 .lh-section--narrow {
     max-width: 900px;
-    margin: 0 auto;
     animation-duration: 0s !important;
     opacity: 1 !important;
 

@@ -3549,7 +3549,7 @@ body #lh_mobile_nav_menu {
     cursor: pointer;
 }
 
-.contact-full-width {width:100%;}
+.contact-full-width .et_pb_contact_field_half {width: 100%;}
 
 .et-pb-contact-message {color: #b3b3b3;}
 button.et_pb_contact_submit.et_pb_button {background: #3ecb96!important; font-size: 20px!important; color:#fff; border:none;}

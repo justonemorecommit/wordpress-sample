@@ -3487,7 +3487,27 @@ body #lh_mobile_nav_menu {
     line-height: 1.7em;
     padding: .3em 1em;
     border-width: 2px;
+    background-color: #3ecb96;
+    float: right;
+    border: 2px #3ecb96;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
 }
+
+.hbspt-form .field .hbspt-form .field .hs-input:not([type=checkbox]):not([type=radio]), .hs-custom-style>div>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+.legal-consent-container .field.hs-form-field {margin-bottom: 8px;}
+
+label.hs-form-booleancheckbox-display {display: block;}
+
+.hbspt-form .et_pb_text_inner ul li::before {content: none;}
 
 /*Event-registration-form*/
 

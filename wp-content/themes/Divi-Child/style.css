@@ -3496,7 +3496,7 @@ body #lh_mobile_nav_menu {
     cursor: pointer;
 }
 
-.hbspt-form .field .hbspt-form .field .hs-input:not([type=checkbox]):not([type=radio]), .hs-custom-style>div>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {
+.hbspt-form .field .hs-input:not([type=checkbox]):not([type=radio]), .hs-custom-style>div>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {
     width: 100%;
     font-size: 16px;
     padding: 10px;
@@ -3507,7 +3507,7 @@ body #lh_mobile_nav_menu {
 
 label.hs-form-booleancheckbox-display {display: block;}
 
-.hbspt-form .et_pb_text_inner ul li::before {content: none;}
+ul li.hs-form-booleancheckbox::before {content: none;}
 
 /*Event-registration-form*/
 

@@ -3508,6 +3508,18 @@ body #lh_mobile_nav_menu {
 label.hs-form-booleancheckbox-display {display: block;}
 
 ul li.hs-form-booleancheckbox::before {content: none;}
+.hbspt-form ul li::before {content: none;}
+.hbspt-form label.hs-error-msg {
+    display: inline!important;
+    color: red;
+    font-size: 13px;
+    float: right;
+    margin-top: -16px;
+}
+
+.hbspt-form ul.inputs-list {
+    margin-left: -32px;
+}
 
 /*Event-registration-form*/
 

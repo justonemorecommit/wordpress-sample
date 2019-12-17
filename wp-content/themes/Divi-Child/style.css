@@ -3478,6 +3478,18 @@ body #lh_mobile_nav_menu {
 }
 
 
+/********Hubspot-forms*************/
+
+.hbspt-form .hs-fieldtype-text label {display:none;}
+.hbspt-form .hs-button, .hbspt-form .hs-button:hover {
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding: .3em 1em;
+    border-width: 2px;
+}
+
+/*Event-registration-form*/
 
 /*** Reg Form ***/
 

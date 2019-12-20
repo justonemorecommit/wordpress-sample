@@ -3998,14 +3998,15 @@ margin: 0 auto;
 }
 
 
-
 /*author*/
 
 .lh-author {border: 1px solid black; background-color: rgba(0,0,0,0.1)!important;}
 .lh-authorsimg img {border-radius: 100%; max-width: 175px; display: block;}
 .lh-authorsimg .et_pb_image_wrap {display: block; padding: 10px}
-.lh-authorstext {padding:50px 0 50px 50px; font-size:16px!important;}
-
+.lh-authorstext {padding:50px 20px 50px 50px; font-size:16px!important;}
+@media(min-width: 981px) {
+    .lh-authorstext {padding:50px 0 50px 50px;}
+}
 
 /* Pagination */
 

@@ -108,7 +108,7 @@ function lh_add_segment_code() {
 
 <?php echo ob_get_clean();
 }
-//add_action('wp_head', 'lh_add_segment_code');
+add_action('wp_head', 'lh_add_segment_code');
 
 
 

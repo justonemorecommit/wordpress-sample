@@ -4148,18 +4148,6 @@ margin: 0 auto;
     }
 }
 
-.single .new-page-header .published:before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    background: url('images/calendar.svg');
-    opacity: 0.7;
-    margin-right: 4px;
-    position: relative;
-    top: 4px;
-}
-
 .single .new-page-header .published {
     margin-bottom: 8px;
     font-size: 14px;
@@ -4270,7 +4258,7 @@ body.band-visible .home-hero-wrap {
 
 }
 
-.post-meta span:before {
+.home-news-wrap .post-meta span:before {
     content: '';
     width: 18px;
     height: 18px;

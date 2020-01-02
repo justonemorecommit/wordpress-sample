@@ -9,61 +9,61 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 ?>
 
 <div id="main-content">
-	<?php
-		if ( et_builder_is_product_tour_enabled() ):
-			// load fullwidth page in Product Tour mode
-			while ( have_posts() ): the_post(); ?>
+    <?php
+        if ( et_builder_is_product_tour_enabled() ):
+            // load fullwidth page in Product Tour mode
+            while ( have_posts() ): the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
-					<div class="entry-content">
-					<?php
-						the_content();
-					?>
-					</div> <!-- .entry-content -->
+                <article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
+                    <div class="entry-content">
+                    <?php
+                        the_content();
+                    ?>
+                    </div> <!-- .entry-content -->
 
-				</article> <!-- .et_pb_post -->
+                </article> <!-- .et_pb_post -->
 
-		<?php endwhile;
-		else:
-	?>
+        <?php endwhile;
+        else:
+    ?>
 
-		<div id="content-area" class="clearfix">
+        <div id="content-area" class="clearfix">
 
         <?php $hero_type = get_field('lh_hero_type');
 
         if(!empty($hero_type)) {
             $hero_type_class = 'new-page-header--' . $hero_type;
         } else {
-	        $hero_type_class = 'new-page-header--regular';
+            $hero_type_class = 'new-page-header--regular';
         }
 
         if($hero_type === 'overlay' || $hero_type === 'overlay_fullwidth') {
             $background_source = get_the_post_thumbnail_url(get_the_ID(),'full');
-            $style = "background-image: url('" . $background_source . "')";
+            $style = "background-image: linear-gradient(to bottom, transparent 50%, black 100%), url('" . $background_source . "')";
         } else {
             $style = '';
         }
 
-        if($hero_type === 'overlay') {
-	        $hero_type_class .= ' container';
-        }
+        /**if($hero_type === 'overlay') {
+            $hero_type_class .= ' container';
+        }**/
         ?>
 
 
 
 
-            <header class="new-page-header <?php echo $hero_type_class; ?>" style="<?php echo $style; ?>">
+            <header class="container new-page-header <?php echo $hero_type_class; ?>" style="<?php echo $style; ?>">
                 <div class="new-page-header__content">
-					<?php echo '<p class="post-meta">';
-					echo '<span class="published"><span class="published__icon">' .  file_get_contents(get_stylesheet_directory_uri() . "/images/calendar.svg"). '</span>' . esc_html( get_the_time( 'M j, Y' )) . '</span>';
-					echo '</p>'; ?>
+                    <?php echo '<p class="post-meta">';
+                    echo '<span class="published"><span class="published__icon">' .  file_get_contents(get_stylesheet_directory_uri() . "/images/calendar.svg"). '</span>' . esc_html( get_the_time( 'M j, Y' )) . '</span>';
+                    echo '</p>'; ?>
 
                     <h1 class="new-page-header__title"><?php echo get_the_title(); ?></h1>
 
                 </div>
             </header>
 
-                <div class="lh-section lh-section--narrow">
+                <div class="lh-section">
 
                 <?php while ( have_posts() ) : the_post(); ?>
                     <?php
@@ -109,13 +109,13 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
                                                 $thumb_class = 'lh-single__thumb lh-single__thumb--narrow';
                                             }
 
-                                            print_thumbnail( $thumb, $thumbnail["use_timthumb"], $titletext, $width, $height, $thumb_class );
+                                            print_thumbnail( $thumb, $thumbnail["use_timthumb"], $titletext, $width, $height, $thumb_class);
                                         }
                                     } else if ( 'gallery' === $post_format ) {
                                         et_pb_gallery_images();
                                     }
                                 ?>
-
+                                
                                 <?php
                                     $text_color_class = et_divi_get_post_text_color();
 
@@ -167,7 +167,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
                         </div> <!-- .et_post_meta_wrapper -->
                     <?php  } ?>
 
-                        <div class="entry-content">
+                        <div class="entry-content container">
                         <?php
                             do_action( 'et_before_content' );
 
@@ -183,7 +183,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
                             if ( et_get_option('divi_468_adsense') !== '' ) echo et_core_intentionally_unescaped( et_core_fix_unclosed_html_tags( et_get_option('divi_468_adsense') ), 'html' );
                             else { ?>
                                 <a href="<?php echo esc_url(et_get_option('divi_468_url')); ?>"><img src="<?php echo esc_attr(et_get_option('divi_468_image')); ?>" alt="468" class="foursixeight" /></a>
-                    <?php 	}
+                    <?php   }
                             echo '</div> <!-- .et-single-post-ad -->';
                         }
 
@@ -204,9 +204,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
                 <?php endwhile; ?>
                 </div> <!-- .lh-one-col -->
 
-		</div> <!-- #content-area -->
+        </div> <!-- #content-area -->
 
-	<?php endif; ?>
+    <?php endif; ?>
 </div> <!-- #main-content -->
 
 <?php

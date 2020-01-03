@@ -3943,6 +3943,8 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 .lh-single__thumb {
     margin: 0 auto;
     display: block;
+    max-height: 500px;
+    width: auto;
 }
 
 /* Post */

@@ -4089,6 +4089,11 @@ margin: 0 auto;
     .lh-authorstext {padding:50px 0 50px 50px;}
 }
 
+/*Subtitle-img*/
+
+.lh-subtitle-img {margin: 0 auto; max-width: 400px; height: auto;}
+.lh-subtitle-img-text {padding-top: 8px; max-width: 400px; margin: 0 auto; font-style: italic;}
+.single .lh-subtitle-img-text p {font-size: 13px;}
 
 /*************BLOG GENERAL****************/
 

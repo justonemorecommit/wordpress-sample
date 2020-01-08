@@ -3480,7 +3480,7 @@ body #lh_mobile_nav_menu {
 
 /********Hubspot-forms*************/
 
-.hbspt-form .hs-fieldtype-text label {display:none;}
+.hbspt-form label {display:none;}
 .hbspt-form .hs-button, .hbspt-form .hs-button:hover {
     font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
     font-weight: 500;

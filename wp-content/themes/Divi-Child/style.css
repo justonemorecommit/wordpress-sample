@@ -8,6 +8,7 @@ Author URI: https://divicake.com/
 Template: Divi
 ======================================*/
 
+
 /*** Take out the divider line between content and sidebar ***/
 #main-content .container:before {
     background: none;

@@ -1,0 +1,9 @@
+diff a/wp-content/themes/Divi-Child/style.css b/wp-content/themes/Divi-Child/style.css	(rejected hunks)
+@@ -8,6 +8,7 @@
+ Template: Divi
+ ======================================*/
+ 
++
+ /*** Take out the divider line between content and sidebar ***/
+ #main-content .container:before {
+     background: none;

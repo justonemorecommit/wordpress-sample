@@ -26,6 +26,27 @@ class Lh_Blog extends ET_Builder_Module {
 		// This character will be rendered using etbuilder font-icon. For fully customized icon, create svg icon and
 		// define its path on $this->icon_path property (see CustomCTAFull / DICM_CTA_Has_VB_Support)
 		$this->icon             = 'g';
+
+		// Toggle settings
+		$this->settings_modal_toggles = array(
+			'general'  => array(
+				'toggles' => array(
+					'main_content' => esc_html__( 'Categories'),
+				),
+			),
+		);
+	}
+
+	function get_fields() {
+			return array(
+				'category' => array(
+					'label'           => esc_html__( 'Categories', 'dicm-divi-custom-modules' ),
+					'type'            => 'categories',
+					'option_category' => 'basic_option',
+					'description'     => esc_html__( 'Text entered here will appear as title.', 'dicm-divi-custom-modules' ),
+					'toggle_slug'     => 'main_content',
+				),
+            );
 	}
 
 
@@ -35,8 +56,21 @@ class Lh_Blog extends ET_Builder_Module {
 		<div class="et_pb_ajax_pagination_container">
 
             <?php
-		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        $query = new WP_Query(array('posts_per_page' => '5', 'paged' => $paged)); ?>
+
+            	$category = $this->props['category'];
+				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+            	if(empty($category)) {
+            		// all = no category is selected	
+       				 $query = new WP_Query(array('posts_per_page' => '5', 'paged' => $paged)); 
+            		
+            	} else {
+            		// single category selected
+            		// two or more selected
+            		 $query = new WP_Query(array('posts_per_page' => '5', 'paged' => $paged, 'cat' => $category)); 
+            	} ?>
+
+
             <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 
                     $post_format = et_pb_post_format(); ?>

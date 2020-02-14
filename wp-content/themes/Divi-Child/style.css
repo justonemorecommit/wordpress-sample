@@ -1524,6 +1524,41 @@ body #page-container .home-demo-watch:hover {
     display: none;
 }
 
+/**Meta-Menu**/
+
+.meta-menu {height: 50px;}
+
+.meta-menu .container {
+    display: flex;
+}
+
+.meta-menu__container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.meta-menu__search{
+    position: relative;
+}
+
+.meta-menu__search input {
+    background: black;
+    padding: 5px !important;
+    width: auto;
+    color: white;
+    font-size: 16px;
+    border: 1px solid gray !important;
+}
+
+.meta-menu-search-submit {
+    position: absolute;
+    background: none;
+    border: 0;
+    right: 14px;
+    top: 10px;
+}
+
 /** Header CTA **/
 .et-top-navigation__cta {
     display: inline-flex;

@@ -1188,6 +1188,19 @@ body #page-container .home-demo-watch:hover {
     }
 }
 
+/*******************TABLES*********************/
+.tolerances-table table {
+    width: 100%;
+    height: auto;
+    color: #000;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+.tolerances-table td {
+    border: 1px solid #000;
+}
+
 /*** Page header ***/
 
 /*** Header ***/

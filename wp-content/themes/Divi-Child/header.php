@@ -306,7 +306,6 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
                     <?php
                     do_action( 'et_header_top' );
                      echo '<a class="et-top-navigation__cta" href="' . __('https://app.laserhub.com/register', 'Divi') . '" target="_blank">' . __('Angebot einholen', 'Divi') . '</a>';
-                    do_action('wpml_add_language_selector');
 
                     ?>
                     <span class="mobile_menu_bar"></span>
@@ -343,7 +342,7 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
                         </button>
                     </form>
                 </div>
-
+            <?php do_action('wpml_add_language_selector'); ?>
 
             </div>
 

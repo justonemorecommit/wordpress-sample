@@ -1540,7 +1540,12 @@ body #page-container .home-demo-watch:hover {
 
 /**Meta-Menu**/
 
-.meta-menu {height: 50px;}
+.meta-menu {
+    height: 50px;
+    display: flex;
+    z-index: 10000000;
+    position: relative;
+}
 
 .meta-menu .container {
     display: flex;
@@ -1575,6 +1580,12 @@ body #page-container .home-demo-watch:hover {
 
 #lh_mobile_nav_menu .meta-menu__search {
     display: none;
+}
+
+@media (min-width: 1024px) {
+    li.menu-item.wpml-ls-item {
+        display: none;
+    }
 }
 
 @media(max-width: 1023px ) {
@@ -1617,7 +1628,7 @@ body #page-container .home-demo-watch:hover {
     padding: 0 !important;
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 50px;
     flex: 1 0 auto;
     margin-left: 18px;
 }
@@ -2215,7 +2226,7 @@ body #lh_mobile_nav_menu {
     }
 
     .band-visible #lh_mobile_nav_menu {
-        padding-top: 110px !important;
+        padding-top: 100px !important;
     }
 }
 

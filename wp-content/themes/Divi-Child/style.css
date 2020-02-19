@@ -3458,7 +3458,7 @@ a.lh-link-list-item {
 }
 
 /**Vertical Cards Overview**/
-.lh-cards-overview {
+.lh-cards-overview .lh_vertical_cards_child .et_pb_module_inner {
     /* SCALE */
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -3473,7 +3473,7 @@ a.lh-link-list-item {
     transition: all 0.3s linear;
 }
 
-.lh-cards-overview:hover {
+.lh-cards-overview .lh_vertical_cards_child .et_pb_module_inner:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);

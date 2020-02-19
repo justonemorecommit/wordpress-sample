@@ -177,6 +177,7 @@ Template: Divi
     color: #303030;
 }
 
+/*delete after implementing new team vertical cards*/
 .et_pb_team_member_description {
     padding: 0.5em;
 }
@@ -184,6 +185,7 @@ Template: Divi
 .et_pb_member_position {
     min-height: 65px;
 }
+/*/*/
 
 #floatdiv_1250 {
     z-index: 100000;
@@ -1565,9 +1567,10 @@ body #page-container .home-demo-watch:hover {
     background: black;
     padding: 5px !important;
     width: auto;
-    color: white;
+    color: gray;
     font-size: 16px;
-    border: 1px solid #fff !important;
+    border: 1px solid gray !important;
+    max-width: 140px;
 }
 
 .meta-menu-search-submit {
@@ -1690,6 +1693,7 @@ body #page-container .home-demo-watch:hover {
 .wpml-ls-item .wpml-ls-flag {
     left: 12px;
     top: 8px;
+    border: 1px solid gray;
 }
 
 /* Hide on bigger */
@@ -3320,22 +3324,6 @@ a.lh-link-list-item {
     padding-bottom: 56.25%;
 }
 
-.lh-cards-container--long .lh-card__media {
-    height: 120px;
-    padding-bottom: 0;
-}
-
-.lh-cards-container--long .lh-card__media img {
-    display: inline-block;
-    object-fit: contain;
-    height: 70px;
-    max-width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-}
-
 /*** Lh card ***/
 
 .lh-card__content {
@@ -3484,6 +3472,49 @@ a.lh-link-list-item {
 .lh-cards-overview .lh-card__content h3 {
     text-align: center;
 }
+
+/********VERTICAL CARDS TEAM********/
+.lh-cards-container--long .lh-card__media {
+    height: 420px;
+    padding-bottom: 0;
+}
+
+.lh-cards-container--long .lh-card__media img {
+    /*display: inline-block;
+    object-fit: contain;
+    height: 70px;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);*/
+}
+
+.lh-team .lh-cards-container .lh_vertical_cards_child {
+    flex: 0 0 100%;
+    padding: 0 0 22px;
+}
+
+@media (min-width: 430px) {
+    .lh-team .lh_vertical_cards_child {
+        padding: 0 20% 22px;
+    }
+}
+
+@media (min-width: 676px) {}
+    .lh-team .lh_vertical_cards_child {
+        flex: 0 0 50%;
+        padding: 0 0 22px 22px
+    }
+}
+
+@media (min-width: 1560px) {
+    .lh-team .lh_vertical_cards_child {
+        flex: 0 0 25%;
+        padding: 0 0 22px 22px;
+    }
+}
+
 
 /*** Images ***/
 .lh-images-wrap {

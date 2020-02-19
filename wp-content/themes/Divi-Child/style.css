@@ -1577,6 +1577,12 @@ body #page-container .home-demo-watch:hover {
     display: none;
 }
 
+@media(max-width: 1023px ) {
+    .meta-menu {
+        display: none;
+    }
+}
+
 
 /**Blog-Navigation**/
 .blog-navi a {
@@ -2242,11 +2248,11 @@ body #lh_mobile_nav_menu {
 }
 
 #main-header {
-    transition: transform 0.15s linear !important;
+    transition: transform 0.25s linear !important;
 }
 
 #main-header.is-hidden {
-    transform: translatey(-60px);
+    transform: translatey(-110px);
 }
 
 

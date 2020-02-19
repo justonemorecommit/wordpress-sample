@@ -74,74 +74,6 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
 	$et_slide_header = 'slide' === et_get_option( 'header_style', 'left' ) || 'fullscreen' === et_get_option( 'header_style', 'left' ) ? true : false;
 	?>
 
-	<?php if ( $et_top_info_defined && ! $et_slide_header || is_customize_preview() ) : ?>
-		<?php ob_start(); ?>
-        <div id="top-header"<?php echo $et_top_info_defined ? '' : 'style="display: none;"'; ?>>
-            <div class="container clearfix">
-
-				<?php if ( $et_contact_info_defined ) : ?>
-
-                    <div id="et-info">
-						<?php if ( '' !== ( $et_phone_number = et_get_option( 'phone_number' ) ) ) : ?>
-                            <span id="et-info-phone"><?php echo et_core_esc_previously( et_sanitize_html_input_text( $et_phone_number ) ); ?></span>
-						<?php endif; ?>
-
-						<?php if ( '' !== ( $et_email = et_get_option( 'header_email' ) ) ) : ?>
-                            <a href="<?php echo esc_attr( 'mailto:' . $et_email ); ?>"><span id="et-info-email"><?php echo esc_html( $et_email ); ?></span></a>
-						<?php endif; ?>
-
-						<?php
-						if ( true === $show_header_social_icons ) {
-							get_template_part( 'includes/social_icons', 'header' );
-						} ?>
-                    </div> <!-- #et-info -->
-
-				<?php endif; // true === $et_contact_info_defined ?>
-
-                <div id="et-secondary-menu">
-					<?php
-					if ( ! $et_contact_info_defined && true === $show_header_social_icons ) {
-						get_template_part( 'includes/social_icons', 'header' );
-					} else if ( $et_contact_info_defined && true === $show_header_social_icons ) {
-						ob_start();
-
-						get_template_part( 'includes/social_icons', 'header' );
-
-						$duplicate_social_icons = ob_get_contents();
-
-						ob_end_clean();
-
-						printf(
-							'<div class="et_duplicate_social_icons">
-								%1$s
-							</div>',
-							et_core_esc_previously( $duplicate_social_icons )
-						);
-					}
-
-					if ( '' !== $et_secondary_nav ) {
-						echo et_core_esc_wp( $et_secondary_nav );
-					}
-
-					et_show_cart_total();
-					?>
-                </div> <!-- #et-secondary-menu -->
-
-            </div> <!-- .container -->
-        </div> <!-- #top-header -->
-		<?php
-		$top_header = ob_get_clean();
-
-		/**
-		 * Filters the HTML output for the top header.
-		 *
-		 * @since 3.10
-		 *
-		 * @param string $top_header
-		 */
-		echo et_core_intentionally_unescaped( apply_filters( 'et_html_top_header', $top_header ), 'html' );
-		?>
-	<?php endif; // true ==== $et_top_info_defined ?>
 
 	<?php if ( $et_slide_header || is_customize_preview() ) : ?>
 		<?php ob_start(); ?>
@@ -263,7 +195,47 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
         <?php endif; ?>
 
         <?php ob_start(); ?>
+
+        <!-- actual header code for laserhub.com -->
         <header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '120' ) ); ?>">
+
+            <div class="meta-menu">
+                <div class="container">
+
+                    <!-- display: flex; --> 
+                    <div class="meta-menu__container">
+
+                        <!-- menu -->
+                         <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'container' => '', 'fallback_cb' => '', 'menu_class' => 'lh_custom_nav', 'menu_id' => 'lh_meta_menu') ); ?>
+
+                        <!-- search --> 
+
+                        <div class="meta-menu__search">
+                               <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                                <?php
+                                printf( '<input type="search" placeholder="%1$s" class="meta-menu-search" value="%2$s" name="s" title="%3$s" />',
+                                    esc_attr__( 'Suchen&hellip;', 'Divi' ),
+                                    get_search_query(),
+                                    esc_attr__( 'Search for:', 'Divi' )
+                                );
+                                ?>
+                                <button type="submit" class="meta-menu-search-submit">
+                                    <span id="et_search_icon"></span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- newsletter -->
+
+                        <!-- language selector --> 
+                         <div class="meta-menu__wpml">
+                            <?php do_action('wpml_add_language_selector'); ?>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
 
             <div class="container clearfix et_menu_container">
                 <?php
@@ -333,7 +305,7 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
 
                     <?php
                     do_action( 'et_header_top' );
-                    echo '<a class="et-top-navigation__cta" href="' . __('https://app.laserhub.com/register', 'Divi') . '" target="_blank">' . __('Angebot einholen', 'Divi') . '</a>';
+                     echo '<a class="et-top-navigation__cta" href="' . __('https://app.laserhub.com/register', 'Divi') . '" target="_blank">' . __('Angebot einholen', 'Divi') . '</a>';
                     do_action('wpml_add_language_selector');
 
                     ?>
@@ -341,10 +313,38 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
                 </div> <!-- #et-top-navigation -->
             </div> <!-- .container -->
 
+
+            <!-- this is mobile menu --> 
             <div id="lh_mobile_nav_menu" data-scroll-lock-scrollable>
+
+                    <!-- primary menu -->
+
 		        <?php
 		        $mobileNav = wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '', 'fallback_cb' => '', 'menu_class' => $menuClass . ' lh_custom_mobile_nav', 'menu_id' => 'lh_custom_mobile_menu', 'walker' => new WPSE_78121_Sublevel_Walker, 'echo' => false ) );
 		        echo et_core_esc_wp( $mobileNav ); ?>
+
+
+                <!-- secondary  menu -->
+                 <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'container' => '', 'fallback_cb' => '', 'menu_class' => 'lh_custom_mobile_nav', 'menu_id' => 'lh_custom_mobile_menu') ); ?>
+
+                <!-- search --> 
+
+                <div class="meta-menu__search">
+                       <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <?php
+                        printf( '<input type="search" placeholder="%1$s" class="meta-menu-search" value="%2$s" name="s" title="%3$s" />',
+                            esc_attr__( 'Suchen&hellip;', 'Divi' ),
+                            get_search_query(),
+                            esc_attr__( 'Search for:', 'Divi' )
+                        );
+                        ?>
+                        <button type="submit" class="meta-menu-search-submit">
+                            <span id="et_search_icon"></span>
+                        </button>
+                    </form>
+                </div>
+
+
             </div>
 
             <div class="et_search_outer">

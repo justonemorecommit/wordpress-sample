@@ -17,20 +17,6 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 			<footer id="main-footer">
 
-                <div class="container search-container">
-                    <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <?php
-                        printf( '<input type="search" placeholder="%1$s" class="footer-search" value="%2$s" name="s" title="%3$s" />',
-                            esc_attr__( 'Suchen&hellip;', 'Divi' ),
-                            get_search_query(),
-                            esc_attr__( 'Search for:', 'Divi' )
-                        );
-                        ?>
-                        <button type="submit" class="footer-search__submit">
-                            <span id="et_search_icon"></span>
-                        </button>
-                    </form>
-                </div>
 
 				<?php get_sidebar( 'footer' ); ?>
 

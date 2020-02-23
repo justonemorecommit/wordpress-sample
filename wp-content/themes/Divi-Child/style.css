@@ -346,6 +346,7 @@ body #page-container .home-demo-watch:hover {
     color: white !important;
 }
 
+/*delete when new testimonial section is finished*/
 /*** Custom testimonial styling ***/
 /*** testimonials column ***/
 .testimonials {
@@ -471,6 +472,31 @@ body #page-container .home-demo-watch:hover {
     .testimonials .et_pb_text_inner {
         padding: 48px;
     }
+}
+
+/*Vertical cards testimonials*/
+
+.lh-testimonials .et_pb_row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.lh-testimonials .et_pb_image_wrap {
+    height: 130px;
+    width: 100%;
+    border-bottom: 2px solid #f8d559;
+}
+.lh-testimonials .et_pb_image_wrap img {
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+}
+.lh-testimonials .et_pb_text_inner {
+    font-size: 16px;
+    padding-top: 25px;
+}
+.lh-testimonials .et_pb_column {
+    padding: 0 0 40px 40px;
+    max-width: 320px;
 }
 
 /*** Home  ***/

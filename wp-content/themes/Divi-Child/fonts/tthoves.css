@@ -1,0 +1,141 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867887, 2020-02-17T05:06:56-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: TTHoves-Black by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/black/
+ * 
+ * Webfont: TTHoves-BlackItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/black-italic/
+ * 
+ * Webfont: TTHoves-Bold by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/bold/
+ * 
+ * Webfont: TTHoves-DemiBoldItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/demi-bold-italic/
+ * 
+ * Webfont: TTHoves-BoldItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/bold-italic/
+ * 
+ * Webfont: TTHoves-ExtraBold by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/extra-bold/
+ * 
+ * Webfont: TTHoves-DemiBold by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/demi-bold/
+ * 
+ * Webfont: TTHoves-Hairline by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/hairline/
+ * 
+ * Webfont: TTHoves-Regular by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/regular/
+ * 
+ * Webfont: TTHoves-ExtraLight by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/extra-light/
+ * 
+ * Webfont: TTHoves-Light by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/light/
+ * 
+ * Webfont: TTHoves-ExtraBoldItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/extra-bold-italic/
+ * 
+ * Webfont: TTHoves-Thin by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/thin/
+ * 
+ * Webfont: TTHoves-ExtraLightItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/extra-light-italic/
+ * 
+ * Webfont: TTHoves-HairlineItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/hairline-italic/
+ * 
+ * Webfont: TTHoves-ThinItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/thin-italic/
+ * 
+ * Webfont: TTHoves-MediumItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/medium-italic/
+ * 
+ * Webfont: TTHoves-Italic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/italic/
+ * 
+ * Webfont: TTHoves-LightItalic by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/light-italic/
+ * 
+ * Webfont: TTHoves-Medium by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-hoves/medium/
+ * 
+ * 
+ * Licensed pageviews: 400,000
+ * Webfonts copyright: Copyright (c) 2019 by TypeType. Designers Ivan Gladkikh, Pavel Emelyanov. Technical designers Marina Khodak, Nadezhda Polomoshnova, Kseniya Karataeva, Olexa Volochay, Nadyr Rakhimov. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b04ef");
+
+  
+@font-face {font-family: 'TTHoves-Black';src: url('tthoves/3B04EF_0_0.eot');src: url('tthoves/3B04EF_0_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_0_0.woff2') format('woff2'),url('tthoves/3B04EF_0_0.woff') format('woff'),url('tthoves/3B04EF_0_0.ttf') format('truetype'),url('tthoves/3B04EF_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-BlackItalic';src: url('tthoves/3B04EF_1_0.eot');src: url('tthoves/3B04EF_1_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_1_0.woff2') format('woff2'),url('tthoves/3B04EF_1_0.woff') format('woff'),url('tthoves/3B04EF_1_0.ttf') format('truetype'),url('tthoves/3B04EF_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-Bold';src: url('tthoves/3B04EF_2_0.eot');src: url('tthoves/3B04EF_2_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_2_0.woff2') format('woff2'),url('tthoves/3B04EF_2_0.woff') format('woff'),url('tthoves/3B04EF_2_0.ttf') format('truetype'),url('tthoves/3B04EF_2_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-DemiBoldItalic';src: url('tthoves/3B04EF_3_0.eot');src: url('tthoves/3B04EF_3_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_3_0.woff2') format('woff2'),url('tthoves/3B04EF_3_0.woff') format('woff'),url('tthoves/3B04EF_3_0.ttf') format('truetype'),url('tthoves/3B04EF_3_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-BoldItalic';src: url(tthoves/3B04EF_4_0.eot');src: url('tthoves/3B04EF_4_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_4_0.woff2') format('woff2'),url('tthoves/3B04EF_4_0.woff') format('woff'),url('tthoves/3B04EF_4_0.ttf') format('truetype'),url('tthoves/3B04EF_4_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-ExtraBold';src: url('tthoves/3B04EF_5_0.eot');src: url('tthoves/3B04EF_5_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_5_0.woff2') format('woff2'),url('tthoves/3B04EF_5_0.woff') format('woff'),url('tthoves/3B04EF_5_0.ttf') format('truetype'),url('tthoves/3B04EF_5_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-DemiBold';src: url('tthoves/3B04EF_6_0.eot');src: url('tthoves/3B04EF_6_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_6_0.woff2') format('woff2'),url('tthoves/3B04EF_6_0.woff') format('woff'),url('tthoves/3B04EF_6_0.ttf') format('truetype'),url('tthoves/3B04EF_6_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-Hairline';src: url('tthoves/3B04EF_7_0.eot');src: url('tthoves/3B04EF_7_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_7_0.woff2') format('woff2'),url('tthoves/3B04EF_7_0.woff') format('woff'),url('tthoves/3B04EF_7_0.ttf') format('truetype'),url('tthoves/3B04EF_7_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-Regular';src: url('tthoves/3B04EF_8_0.eot');src: url('tthoves/3B04EF_8_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_8_0.woff2') format('woff2'),url('tthoves/3B04EF_8_0.woff') format('woff'),url('tthoves/3B04EF_8_0.ttf') format('truetype'),url('tthoves/3B04EF_8_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-ExtraLight';src: url('tthoves/3B04EF_9_0.eot');src: url('tthoves/3B04EF_9_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_9_0.woff2') format('woff2'),url('tthoves/3B04EF_9_0.woff') format('woff'),url('tthoves/3B04EF_9_0.ttf') format('truetype'),url('tthoves/3B04EF_9_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-Light';src: url('tthoves/3B04EF_A_0.eot');src: url('tthoves/3B04EF_A_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_A_0.woff2') format('woff2'),url('tthoves/3B04EF_A_0.woff') format('woff'),url('tthoves/3B04EF_A_0.ttf') format('truetype'),url('tthoves/3B04EF_A_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-ExtraBoldItalic';src: url('tthoves/3B04EF_B_0.eot');src: url('tthoves/3B04EF_B_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_B_0.woff2') format('woff2'),url('tthoves/3B04EF_B_0.woff') format('woff'),url('tthoves/3B04EF_B_0.ttf') format('truetype'),url('tthoves/3B04EF_B_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-Thin';src: url('tthoves/3B04EF_C_0.eot');src: url('tthoves/3B04EF_C_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_C_0.woff2') format('woff2'),url('tthoves/3B04EF_C_0.woff') format('woff'),url('tthoves/3B04EF_C_0.ttf') format('truetype'),url('tthoves/3B04EF_C_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-ExtraLightItalic';src: url('tthoves/3B04EF_D_0.eot');src: url('tthoves/3B04EF_D_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_D_0.woff2') format('woff2'),url('tthoves/3B04EF_D_0.woff') format('woff'),url('tthoves/3B04EF_D_0.ttf') format('truetype'),url('tthoves/3B04EF_D_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-HairlineItalic';src: url('tthoves/3B04EF_E_0.eot');src: url('tthoves/3B04EF_E_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_E_0.woff2') format('woff2'),url('tthoves/3B04EF_E_0.woff') format('woff'),url('tthoves/3B04EF_E_0.ttf') format('truetype'),url('tthoves/3B04EF_E_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-ThinItalic';src: url('tthoves/3B04EF_F_0.eot');src: url('tthoves/3B04EF_F_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_F_0.woff2') format('woff2'),url('tthoves/3B04EF_F_0.woff') format('woff'),url('tthoves/3B04EF_F_0.ttf') format('truetype'),url('tthoves/3B04EF_F_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-MediumItalic';src: url('tthoves/3B04EF_10_0.eot');src: url('tthoves/3B04EF_10_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_10_0.woff2') format('woff2'),url('tthoves/3B04EF_10_0.woff') format('woff'),url('tthoves/3B04EF_10_0.ttf') format('truetype'),url('tthoves/3B04EF_10_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-Italic';src: url('tthoves/3B04EF_11_0.eot');src: url('tthoves/3B04EF_11_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_11_0.woff2') format('woff2'),url('tthoves/3B04EF_11_0.woff') format('woff'),url('tthoves/3B04EF_11_0.ttf') format('truetype'),url('tthoves/3B04EF_11_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-LightItalic';src: url('tthoves/3B04EF_12_0.eot');src: url('tthoves/3B04EF_12_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_12_0.woff2') format('woff2'),url('tthoves/3B04EF_12_0.woff') format('woff'),url('tthoves/3B04EF_12_0.ttf') format('truetype'),url('tthoves/3B04EF_12_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'TTHoves-Medium';src: url('tthoves/3B04EF_13_0.eot');src: url('tthoves/3B04EF_13_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_13_0.woff2') format('woff2'),url('tthoves/3B04EF_13_0.woff') format('woff'),url('tthoves/3B04EF_13_0.ttf') format('truetype'),url('tthoves/3B04EF_13_0.svg#wf') format('svg');}
+ 

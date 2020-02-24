@@ -23,6 +23,7 @@
     <script type="text/javascript">
         document.documentElement.className = 'js';
     </script>
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/Divi-Child/fonts/tthoves.css"/>
 
 	<?php wp_head();
 

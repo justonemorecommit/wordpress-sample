@@ -8,6 +8,16 @@ Author URI: https://divicake.com/
 Template: Divi
 ======================================*/
 
+body, input, textarea, select {
+    font-family: TTHoves-Regular!important;
+    color: #333!important;
+}
+
+.single .entry-content p, .single .entry-content ul, .single .entry-content ol, .single .entry-content a {
+    color: #666;
+    line-height: 1.6;
+    font-size: 17px!important;
+}
 
 /*** Take out the divider line between content and sidebar ***/
 #main-content .container:before {
@@ -31,7 +41,7 @@ Template: Divi
 #footer-info {
 
     opacity: 0.5;
-    font-family: Roboto;
+    font-family: TThoves-Light;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -51,7 +61,7 @@ Template: Divi
 
 .footer-typo {
     height: auto !important;
-    font-family: Roboto;
+    font-family: TTHoves-Regular;
     font-size: 16px;
     line-height: 2;
     letter-spacing: normal;
@@ -67,7 +77,7 @@ Template: Divi
 .footer-widget .footer-header {
     /*width: 380;*/
     height: 30px;
-    font-family: Roboto;
+    font-family: TThoves-DemiBold;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
@@ -132,6 +142,7 @@ Template: Divi
     padding-top: 10px;
 }
 
+/*Delete?*/
 .lh-highlight-heading
 .et_pb_text_inner h2 {
     font-size: 36px;
@@ -140,7 +151,7 @@ Template: Divi
     letter-spacing: 1.7px;
     color: rgba(48, 48, 48, 0.7);
 }
-
+/**/
 .et_pb_toggle_content ul li,
 .et_pb_text_inner ul li {
     line-height: 1.64;
@@ -833,7 +844,6 @@ body #page-container .home-demo-watch:hover {
 .home-news--regular .et_pb_post .entry-title {
     font-size: 21px !important;
     line-height: 1.2;
-    font-weight: 700;
     padding: 0 0 8px;
 }
 
@@ -874,13 +884,6 @@ body #page-container .home-demo-watch:hover {
 
     .home-news--featured .column .et_pb_post .entry-title {
         font-size: 21px !important;
-    }
-
-    .home-news--regular .et_pb_post .entry-title {
-        font-size: 18px !important;
-        line-height: 1.3;
-        font-weight: 700;
-        margin-bottom: 6px;
     }
 
     .home-news--featured .et_pb_post,
@@ -1460,7 +1463,7 @@ body #page-container .home-demo-watch:hover {
 /* Logo */
 .logo_container img {
     position: relative;
-    top: 10px;
+    top: 4px;
 }
 
 .logo_container {
@@ -1471,6 +1474,7 @@ body #page-container .home-demo-watch:hover {
 .lh_custom_nav {
     display: flex;
     z-index: 9999;
+    font-family: TThoves-Regular;
 }
 
 /* Megamenu */
@@ -1571,7 +1575,7 @@ body #page-container .home-demo-watch:hover {
 /**Meta-Menu**/
 
 .meta-menu {
-    height: 50px;
+    height: 45px;
     display: flex;
     z-index: 10000000;
     position: relative;
@@ -1579,6 +1583,7 @@ body #page-container .home-demo-watch:hover {
 
 .meta-menu .container {
     display: flex;
+    height: 50px;
 }
 
 .meta-menu__container {
@@ -1593,7 +1598,6 @@ body #page-container .home-demo-watch:hover {
 
 .meta-menu__search input {
     background: black;
-    padding: 5px !important;
     width: auto;
     color: gray;
     font-size: 16px;
@@ -1646,8 +1650,8 @@ body #page-container .home-demo-watch:hover {
     display: inline-flex;
     align-items: center;
     color: white;
+    font-family: TThoves-DemiBold;
     font-size: 16px !important;
-    font-weight: bold;
     padding: 8px 16px !important;
     line-height: 1;
     background: #3ecb96 !important;
@@ -1662,6 +1666,7 @@ body #page-container .home-demo-watch:hover {
     height: 50px;
     flex: 1 0 auto;
     margin-left: 18px;
+    font-weight: 400;
 }
 
 @media (min-width: 1024px) {
@@ -2584,7 +2589,7 @@ body #lh_mobile_nav_menu {
 }*/
 
 .lh-content-heading h2 {
-    font-size: 32px !important;
+    font-size: 32px;
     width: fit-content;
     padding: 10px;
     margin: 0 auto;
@@ -2697,12 +2702,15 @@ body #lh_mobile_nav_menu {
 
 .lh-section h2 {
     font-size: 32px;
+    font-family: TThoves-DemiBold;
 }
 
 .lh-section h3 {
     font-size: 24px;
 }
-
+.lh-section h3, .lh-section h3 span {
+    font-family: TTHoves-DemiBold;
+}
 
 /* Typography / text */
 .lh-section .et_pb_text h1,
@@ -2863,16 +2871,16 @@ body #lh_mobile_nav_menu {
     margin-top: 0 !important;
 }
 
-.lh-cta__title {
+/*.lh-cta__title {
     font-size: 32px;
     line-height: 1.2;
     max-width: 90%;
     margin: 0 auto 30px;
     font-weight: 500;
     color: #303030;
-}
+}*/
 
-/*** Page header: new bilding block ***/
+/*** Page header: new building block ***/
 /* TODO: remove old styles */
 
 /*** Page header ***/
@@ -2932,6 +2940,12 @@ body #lh_mobile_nav_menu {
     margin: 0 auto;
 
 }
+
+h1.new-page-header__title {
+    font-family: TTHoves-Bold;
+    font-weight: 700;
+}
+
 
 .new-page-header--hero .new-page-header__title,
 .new-page-header--hero .new-page-header__subtitle {
@@ -3310,10 +3324,11 @@ a.lh-link-list-item {
     max-width: 35px;
     margin: 0 6px 0 0;
 }
-.more-procedures p {
+.more-procedures p, {
     display: flex;
     line-height: 1.2;
     align-items: center;
+    font-size: 16px;
 }
 
 .more-procedures .et_pb_column {
@@ -3756,7 +3771,7 @@ a.lh-link-list-item {
 
 .hbspt-form label {display:none;}
 .hbspt-form .hs-button, .hbspt-form .hs-button:hover {
-    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-family: TThoves-DemiBold!important;
     font-weight: 500;
     line-height: 1.7em;
     padding: .3em 1em;
@@ -3766,7 +3781,7 @@ a.lh-link-list-item {
     border: 2px #3ecb96;
     border-radius: 3px;
     font-size: 20px;
-    color: #fff;
+    color: #fff!important;
     cursor: pointer;
 }
 
@@ -3911,11 +3926,11 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 
 .lh-cta__title {
     font-size: 28px!important;
+    font-family: TThoves-DemiBold;
 }
-
-
 .lh-cta .et_pb_button {
-    font-size: 16px;
+    font-size: 18px!important;
+    font-family: TThoves-DemiBold;
 }
 
 @media (max-width: 1023px) {
@@ -4344,9 +4359,16 @@ margin: 0 auto;
     padding-top: 22px;
 }
 .lh-section .lh-content-heading-wrap .lh-quote-title h2 {
-    font-size: 39px; 
-    font-weight:bold;
+    font-size: 40px;
+    font-family: TTHoves-ExtraBold;
+    padding: 0;
+    font-weight: 700;
 }
+.lh-quote-title .lh-content-heading h2:after {
+    border-bottom: none;
+    display: unset;
+}
+
 .lh-quote-source p {
     font-size: 14px!important;
 }
@@ -4520,6 +4542,13 @@ margin: 0 auto;
 .home-hero-wrap .et_pb_text_1 {
     padding-top: 0!important;
     font-size: 32px;
+}
+
+.home-hero-wrap h1 {
+    font-size: 70px;
+    font-family: TThoves-DemiBold;
+    font-weight: 500;
+    padding: 0;
 }
 
 /* Move home hero down when  band is visible */

@@ -1599,6 +1599,7 @@ body #page-container .home-demo-watch:hover {
 .meta-menu__search input {
     background: black;
     width: auto;
+    padding: 5px;
     color: gray;
     font-size: 16px;
     border: 1px solid gray !important;
@@ -3324,7 +3325,7 @@ a.lh-link-list-item {
     max-width: 35px;
     margin: 0 6px 0 0;
 }
-.more-procedures p, {
+.more-procedures .more-procedures-span {
     display: flex;
     line-height: 1.2;
     align-items: center;

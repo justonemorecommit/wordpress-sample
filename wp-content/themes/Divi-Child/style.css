@@ -13,10 +13,10 @@ body, input, textarea, select {
     color: #333!important;
 }
 
-.single .entry-content p, .single .entry-content ul, .single .entry-content ol, .single .entry-content a {
-    color: #666;
+.single .entry-content p, .single .entry-content ul, .single .entry-content li, .single .entry-content ol, .single .entry-content a {
+    color: #000;
     line-height: 1.6;
-    font-size: 17px!important;
+    font-size: 18px!important;
 }
 
 /*** Take out the divider line between content and sidebar ***/
@@ -1600,7 +1600,7 @@ body #page-container .home-demo-watch:hover {
     background: black;
     width: auto;
     padding: 5px;
-    color: gray;
+    color: #fff!important;
     font-size: 16px;
     border: 1px solid gray !important;
     max-width: 140px;
@@ -2561,7 +2561,7 @@ body #lh_mobile_nav_menu {
 
 .lh-section.et_pb_with_background {
     margin: 0 !important;
-    padding: 56px 0 !important; /* compensate for line height */
+    padding: 60px 0 !important; /* compensate for line height */
 }
 
 /* Section container (row) */
@@ -2739,7 +2739,7 @@ body #lh_mobile_nav_menu {
 .lh-section .et_pb_text h4,
 .lh-section .et_pb_text h5,
 .lh-section .et_pb_text h6 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -3439,7 +3439,7 @@ a.lh-link-list-item {
 
 .lh-card__content h4 {
     font-size: 16px;
-    padding-bottom: 0;
+    padding-bottom: 2px;
 }
 
 .lh-card__content p {
@@ -4178,8 +4178,10 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
     max-width: 100%;
     width: 100%;
     height: 500px;
-    background-position: center;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .container.new-page-header.new-page-header--overlay {
@@ -4196,8 +4198,8 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 .single .new-page-header--overlay_fullwidth .new-page-header__content, 
 .single .new-page-header--overlay .new-page-header__content {
     position: absolute;
-    bottom: 0;
-    left: -200px;
+    bottom: 59px;
+    left: -340px;
     right: 0;
     margin: auto;
     max-width: 700px;
@@ -4389,6 +4391,15 @@ margin: 0 auto;
     border: 1px solid black; 
     background-color: rgba(0,0,0,0.1)!important;
 }
+
+.lh-author .et_pb_row {
+    display: block;
+}
+
+.lh-author .et_pb_column {
+    padding: 30px;
+}
+
 .lh-authorsimg img {
     border-radius: 100%; 
     max-width: 175px; 
@@ -4397,13 +4408,14 @@ margin: 0 auto;
 .lh-authorsimg .et_pb_image_wrap {
     display: block; padding: 10px
 }
-.lh-authorstext {
-    padding:50px 20px 50px 50px; 
-    font-size:16px!important;
+.lh-authorstext .et_pb_text_inner p, .lh-authorstext .et_pb_text_inner {
+    font-size: 16px;
 }
-@media(min-width: 981px) {
-    .lh-authorstext {
-        padding:50px 0 50px 50px;
+
+@media(min-width: 676px) {
+    .lh-author .et_pb_row {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -4495,14 +4507,6 @@ margin: 0 auto;
 .single .new-page-header {
     margin-bottom: 24px;
     padding-top: 0;
-}
-
-.single .entry-content p,
-.single .entry-content ul,
-.single .entry-content ol,
-.single .entry-content a
-{
-    font-size: 16px;
 }
 
 /***********EVENT LPS BUILDING BLOCKS*********/

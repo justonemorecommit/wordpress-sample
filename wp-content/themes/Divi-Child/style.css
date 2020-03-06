@@ -339,8 +339,7 @@ Home demo video section
 
 @media (min-width: 768px) {
     .home-hero {
-        padding-bottom: 0 !important;
-        margin-bottom: 220px !important;
+        margin-bottom: 170px !important;
     }
 
     .home-demo-wrap {
@@ -502,13 +501,23 @@ body #page-container .home-demo-watch:hover {
     left: 0px;
     max-height: 80%;
 }
+.lh-testimonials .testimonials-row .et_pb_column:first-child {
+    margin-left: 0;
+}
 .lh-testimonials .et_pb_text_inner {
     font-size: 16px;
     padding-top: 25px;
 }
 .lh-testimonials .testimonials-row .et_pb_column {
-    padding: 0 0 40px 40px;
+    margin: 0 0 40px 40px!important;
     max-width: 320px;
+    min-width: 250px;
+}
+@media (max-width: 860px) {
+    .lh-testimonials .testimonials-row {
+        justify-content: left;
+        overflow-x: scroll;
+    }
 }
 
 /*** Home  ***/
@@ -980,6 +989,10 @@ body #page-container .home-demo-watch:hover {
     margin-bottom: 48px;
 }
 
+.materials__section.et_pb_row + .materials__section.et_pb_row {
+    padding-top: 0!important;
+}
+
 /* Title */
 .materials__section .et_pb_column:first-child {
     flex: 0 0 180px;
@@ -1158,7 +1171,7 @@ body #page-container .home-demo-watch:hover {
 
 .material-options__list .et_pb_text_inner li {
     color: black;
-    padding: 8px 0 8px 12px;
+    padding: 8px 0 0 12px;
     flex: 0 0 auto;
     line-height: 1.4;
     font-size: 14px;
@@ -2745,7 +2758,7 @@ body #lh_mobile_nav_menu {
 
 /* Lists */
 .lh-section .et_pb_text_inner ul {
-    padding: 0 0 16px 32px !important;
+    padding: 0 0 16px 32px;
 }
 
 /* Images */
@@ -3210,7 +3223,7 @@ a.lh-link-list-item {
 
 .lh-icons__item img {
     margin-bottom: 8px;
-    height: 110px;
+    height: 100px;
 }
 
 @media (max-width: 767px) {
@@ -3293,11 +3306,22 @@ a.lh-link-list-item {
     }
 }
 
-/*USP-Section*/
-
-.usp-section .lh_icons_child {
-    text-align: left;
+/*Tabs*/
+.laserhub-tabs .et_pb_tabs {
+    border: none;
 }
+.laserhub-tabs .et_pb_tabs_controls:after {
+    content: ' ';
+    border-top: 2px solid #f8d559;
+    top: -2px;
+}
+.laserhub-tabs .et_pb_tabs_controls li a {
+    padding: 4px 30px 15px;
+}
+.laserhub-tabs .et_pb_tabs_controls li {
+    border-right: none;
+}
+/*USP-Section*/
 
 .usp-section .lh-icons__item p, .usp-section .lh-icons__item h3 {
     padding-left: 0;
@@ -3617,6 +3641,12 @@ a.lh-link-list-item {
     }
 }
 
+.lh-cards-overview--small .lh_vertical_cards img {
+    object-fit: contain;
+}
+.lh-cards-overview--small .lh-cta__button {
+    margin-top: -70px;
+}
 /*** Images ***/
 .lh-images-wrap {
     margin: 24px 0 !important;
@@ -4081,24 +4111,23 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 .lh-accordion__title {
 
 }
-
 .lh-accordion__title button {
     background: none;
-    border: 0;
-
-    display: flex;
-
+    border: none;
+    border-bottom: 1px solid #000;
     position: relative;
-
     width: 100%;
     height: 100%;
     font-size: 24px;
     color: #303030;
-    font-weight: bold;
     padding: 16px 16px;
     text-align: left;
-
     cursor: pointer;
+}
+.presse-accordion .et_pb_image {
+    padding-top: 0;
+    margin-top: 0!important;
+    max-width: 200px;
 }
 
 .lh-accordion__title img {
@@ -4351,6 +4380,7 @@ margin: 0 auto;
         margin-right: 32px;
     }
 }
+
 /*****************BLOG-BUILDING-BLOCKS********************/
 /*Quote*/
 
@@ -4546,14 +4576,20 @@ margin: 0 auto;
 
 .home-hero-wrap .et_pb_text_1 {
     padding-top: 0!important;
+    padding-bottom: 0!important;
     font-size: 32px;
 }
 
 .home-hero-wrap h1 {
-    font-size: 70px;
+    font-size: 80px!important;
     font-family: TThoves-DemiBold;
-    font-weight: 500;
+    font-weight: 500!important;
     padding: 0;
+}
+
+@media (max-width: 480px) {
+    .home-hero-wrap h1 {
+        font-size: 36px !important;
 }
 
 /* Move home hero down when  band is visible */
@@ -4568,7 +4604,7 @@ body.band-visible .home-hero-wrap {
 
 
 /* Facts */
-.home-facts h2 {
+/*.home-facts h2 {
     font-size: 32px !important;
 }
 
@@ -4593,7 +4629,7 @@ body.band-visible .home-hero-wrap {
 }
 #usp_section2 .et_pb_image_wrap {
     max-width: 457px;
-}
+}*/
 
 /* Form */
 

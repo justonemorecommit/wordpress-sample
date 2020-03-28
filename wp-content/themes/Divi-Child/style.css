@@ -9,14 +9,17 @@ Template: Divi
 ======================================*/
 
 body, input, textarea, select {
-    font-family: TTHoves-Regular!important;
+    font-family: TTHoves-Regular, sans-serif!important;
     color: #333!important;
 }
 
-.single .entry-content p, .single .entry-content ul, .single .entry-content li, .single .entry-content ol, .single .entry-content a {
+.single .entry-content p, .single .entry-content ul, .single .entry-content li, .single .entry-content ol {
     color: #000;
     line-height: 1.6;
     font-size: 18px!important;
+}
+.single .entry-content a {
+    font-size: 18px;
 }
 
 /*** Take out the divider line between content and sidebar ***/
@@ -41,7 +44,7 @@ body, input, textarea, select {
 #footer-info {
 
     opacity: 0.5;
-    font-family: TThoves-Light;
+    font-family: TThoves-Light, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -61,7 +64,7 @@ body, input, textarea, select {
 
 .footer-typo {
     height: auto !important;
-    font-family: TTHoves-Regular;
+    font-family: TTHoves-Regular, sans-serif;
     font-size: 16px;
     line-height: 2;
     letter-spacing: normal;
@@ -77,7 +80,7 @@ body, input, textarea, select {
 .footer-widget .footer-header {
     /*width: 380;*/
     height: 30px;
-    font-family: TThoves-DemiBold;
+    font-family: TThoves-DemiBold, sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
@@ -1241,7 +1244,9 @@ body #page-container .home-demo-watch:hover {
     margin: 0 auto;
     table-layout: fixed;
 }
-
+.tolerances-table tr td {
+    padding: 10px;
+}
 .tolerances-table td {
     border: 1px solid #000;
     border-top: 1px solid #000!important;
@@ -1487,7 +1492,7 @@ body #page-container .home-demo-watch:hover {
 .lh_custom_nav {
     display: flex;
     z-index: 9999;
-    font-family: TThoves-Regular;
+    font-family: TThoves-Regular, sans-serif;
 }
 
 /* Megamenu */
@@ -1664,7 +1669,7 @@ body #page-container .home-demo-watch:hover {
     display: inline-flex;
     align-items: center;
     color: white;
-    font-family: TThoves-DemiBold;
+    font-family: TThoves-DemiBold, sans-serif;
     font-size: 16px !important;
     padding: 8px 16px !important;
     line-height: 1;
@@ -1778,6 +1783,7 @@ body #page-container .home-demo-watch:hover {
 
 .lh_custom_nav .lh-sub-menu .menu-image-title {
     font-size: 16px;
+    padding-left: 0;
 }
 
 .lh_custom_nav .lh-sub-menu .menu-item-description {
@@ -2716,14 +2722,14 @@ body #lh_mobile_nav_menu {
 
 .lh-section h2 {
     font-size: 32px;
-    font-family: TThoves-DemiBold;
+    font-family: TThoves-DemiBold, sans-serif;
 }
 
 .lh-section h3 {
     font-size: 24px;
 }
 .lh-section h3, .lh-section h3 span {
-    font-family: TTHoves-DemiBold;
+    font-family: TTHoves-DemiBold, sans-serif;
 }
 
 /* Typography / text */
@@ -2956,7 +2962,7 @@ body #lh_mobile_nav_menu {
 }
 
 h1.new-page-header__title {
-    font-family: TTHoves-Bold;
+    font-family: TTHoves-Bold, sans-serif;
     font-weight: 700;
 }
 
@@ -3310,16 +3316,24 @@ a.lh-link-list-item {
 .laserhub-tabs .et_pb_tabs {
     border: none;
 }
+.laserhub-tabs .et_pb_tab {
+    padding: 15px 0;
+}
+.laserhub-tabs .et_pb_tabs_controls {
+    background: none;
+}
 .laserhub-tabs .et_pb_tabs_controls:after {
     content: ' ';
     border-top: 2px solid #f8d559;
     top: -2px;
 }
 .laserhub-tabs .et_pb_tabs_controls li a {
-    padding: 4px 30px 15px;
+    padding: 0 25px 15px 0;
 }
 .laserhub-tabs .et_pb_tabs_controls li {
     border-right: none;
+    font-family: TTHoves-Bold, sans-serif;
+    font-weight: 600;
 }
 /*USP-Section*/
 
@@ -3359,12 +3373,15 @@ a.lh-link-list-item {
 .more-procedures .et_pb_column {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: initial;
 }
 
 @media (max-width: 980px) {
     .more-procedures .et_pb_row .et_pb_column:first-child {
         width: 100%;
+    }
+    .more-procedures .et_pb_column {
+        justify-content: space-around;
     }
 }
 
@@ -3802,7 +3819,7 @@ a.lh-link-list-item {
 
 .hbspt-form label {display:none;}
 .hbspt-form .hs-button, .hbspt-form .hs-button:hover {
-    font-family: TThoves-DemiBold!important;
+    font-family: TThoves-DemiBold, sans-serif!important;
     font-weight: 500;
     line-height: 1.7em;
     padding: .3em 1em;
@@ -3957,11 +3974,11 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 
 .lh-cta__title {
     font-size: 28px!important;
-    font-family: TThoves-DemiBold;
+    font-family: TThoves-DemiBold, sans-serif;
 }
 .lh-cta .et_pb_button {
     font-size: 18px!important;
-    font-family: TThoves-DemiBold;
+    font-family: TThoves-DemiBold, sans-serif;
 }
 
 @media (max-width: 1023px) {
@@ -3970,6 +3987,10 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
         margin-bottom: 16px;
     }
 
+}
+
+.cta-text-section .cta-text-row {
+    padding-top: 0;
 }
 
 .lh-button--ghost {
@@ -4222,7 +4243,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 }
 
 #main-content .container {padding-top:20px;}
-#main-content .lh-section {margin: 50px auto;}
+#main-content .lh-section {margin: 60px auto;}
 
 .single .new-page-header--overlay_fullwidth .new-page-header__content, 
 .single .new-page-header--overlay .new-page-header__content {
@@ -4274,8 +4295,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
     margin: 0 auto;
 }
 
-.lh-blog
-.et_pb_post {
+.lh-blog .et_pb_post {
     display: flex;
     padding-bottom: 40px;
     margin-bottom: 40px;
@@ -4298,8 +4318,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 margin: 0 auto;
 }
 
-.lh-blog
-.et_pb_post .entry-title {
+.lh-blog .et_pb_post .entry-title {
     padding-bottom: 16px !important;
 }
 
@@ -4308,14 +4327,12 @@ margin: 0 auto;
     letter-spacing: 0;
 }
 
-.lh-blog
-.post-meta span {
+.lh-blog .post-meta span {
     display: flex;
     align-items: center;
 }
 
-.lh-blog
-.post-meta span:before {
+.lh-blog .post-meta span:before {
     content: '';
     width: 18px;
     height: 18px;
@@ -4393,7 +4410,7 @@ margin: 0 auto;
 }
 .lh-section .lh-content-heading-wrap .lh-quote-title h2 {
     font-size: 40px;
-    font-family: TTHoves-ExtraBold;
+    font-family: TTHoves-ExtraBold, sans-serif;
     padding: 0;
     font-weight: 700;
 }
@@ -4439,7 +4456,7 @@ margin: 0 auto;
     display: block; padding: 10px
 }
 .lh-authorstext .et_pb_text_inner p, .lh-authorstext .et_pb_text_inner {
-    font-size: 16px;
+    font-size: 16px!important;
 }
 
 @media(min-width: 676px) {
@@ -4508,21 +4525,17 @@ margin: 0 auto;
 
 
 @media (max-width:767px) {
-
     .single .new-page-header--regular {
           margin-bottom: 0 !important;
       }
-
     .single .lh-single__thumb {
         margin-top: 16px !important;
     }
-
     .single .new-page-header__title {
         font-size: 30px !important;
         width: 100%;
         line-height: 1.3;
     }
-
     .single .lh-section > .et_pb_row {
         padding-top: 18px;
     }
@@ -4582,7 +4595,7 @@ margin: 0 auto;
 
 .home-hero-wrap h1 {
     font-size: 80px!important;
-    font-family: TThoves-DemiBold;
+    font-family: TThoves-DemiBold, sans-serif;
     font-weight: 500!important;
     padding: 0;
 }

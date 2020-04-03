@@ -3402,9 +3402,14 @@ a.lh-link-list-item {
     height: 100%;
 }
 
+.lh_vertical_cards_child {
+    padding: 0 0 40px  40px;
+}
+
 .lh-cards-container--2,
 .lh-cards-container--3,
-.lh-cards-container--4 {
+.lh-cards-container--4,
+.lh-cards-container--5 {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 -40px;
@@ -3412,28 +3417,30 @@ a.lh-link-list-item {
 
 .lh-cards-container--1 .lh_vertical_cards_child {
     flex: 0 0 100%;
-    padding: 0 0 40px;
 }
 
 .lh-cards-container--2 .lh_vertical_cards_child {
     flex: 0 0 50%;
-    padding: 0 0 40px  40px;
 }
 
 .lh-cards-container--3 .lh_vertical_cards_child {
     flex: 0 0 33.333%;
-    padding: 0 0 40px  40px;
 }
 
 .lh-cards-container--4 .lh_vertical_cards_child {
     flex: 0 0 25%;
-    padding: 0 0 40px 40px;
+}
+
+.lh-cards-container--5 .lh_vertical_cards_child {
+    flex: 0 0 20%;
 }
 
 @media (max-width: 1100px) {
     .lh-cards-container--4 .lh_vertical_cards_child {
         flex: 0 0 50%;
-        padding: 0 0 40px 40px;
+    }
+    .lh-cards-container--5 .lh_vertical_cards_child {
+        flex: 0 0 33.33%;
     }
 }
 
@@ -3579,7 +3586,6 @@ a.lh-link-list-item {
 
     .lh-cards-container--3 .lh_vertical_card {
         flex: 0 0 25%;
-        padding: 0 0 40px 40px;
     }
 }
 

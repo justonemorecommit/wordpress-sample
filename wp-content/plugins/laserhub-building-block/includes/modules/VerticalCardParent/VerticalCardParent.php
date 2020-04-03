@@ -57,6 +57,7 @@ class LH_Vertical_Card extends ET_Builder_Module {
 //					'2'  => esc_html__( '2', 'dicm-divi-custom-modules' ),
 					'3'  => esc_html__( '3', 'dicm-divi-custom-modules' ),
 					'4'  => esc_html__( '4', 'dicm-divi-custom-modules' ),
+					'5'  => esc_html__( '5', 'dicm-divi-custom-modules' ),
 				),
 				'toggle_slug'     => 'main_content',
 				'description'     => esc_html__( 'How many columns'),

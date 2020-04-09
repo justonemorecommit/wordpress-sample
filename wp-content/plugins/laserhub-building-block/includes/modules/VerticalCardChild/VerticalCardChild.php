@@ -106,10 +106,9 @@ class Lh_Vert_Card_Child extends ET_Builder_Module {
 					<?php echo $content; ?>
                 </div>
 
-                <?php if(!empty($link)) { ?>
-                	<a href="<?php echo $link; ?>" class="lh-card__more">Mehr</a>		
-               <?php } ?>	
-               
+                <?php if(!empty($link)) { 
+                	echo '<a href="' . $link . '" class="lh-card__more">' .  __( 'Mehr', 'Divi' ) . '</a>';		
+              	 } ?>
             </div>
 
 

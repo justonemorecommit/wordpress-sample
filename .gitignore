@@ -1,2 +1,14 @@
 *.DS_Store
 *thumbs.db
+wp-admin/
+wp-includes/
+wp-*.php
+index.php
+license.txt
+xmlrpc.php
+wp-content/cache
+wp-content/languages
+wp-content/uploads
+wp-content/upgrade
+wp-content/plugins
+!wp-content/plugins/laserhub-building-block

@@ -22,6 +22,17 @@ body, input, textarea, select {
     font-size: 18px;
 }
 
+.flex-row-center {
+    display: block;
+}
+
+@media (min-width:767px) {
+    .flex-row-center{
+        display: flex;
+        align-items: center;
+    }
+}
+
 /*** Take out the divider line between content and sidebar ***/
 #main-content .container:before {
     background: none;
@@ -42,17 +53,14 @@ body, input, textarea, select {
 }
 
 #footer-info {
-
     opacity: 0.5;
     font-family: TThoves-Light, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-
     line-height: normal;
     text-align: center !important;
-
     color: #ffffff;
 }
 
@@ -362,7 +370,7 @@ body #page-container .home-demo-watch:hover {
 /*delete when new testimonial section is finished*/
 /*** Custom testimonial styling ***/
 /*** testimonials column ***/
-.testimonials {
+/*.testimonials {
     display: flex;
 }
 
@@ -449,13 +457,13 @@ body #page-container .home-demo-watch:hover {
     }
 }
 
-/* Tablet */
+/* Tablet *//*
 @media (min-width: 768px) and (max-width: 1023px) {
     .testimonials {
         overflow-x: auto !important;
         width: 100% !important;
         padding: 0 5% !important;
-        -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+        -webkit-overflow-scrolling: touch;
     }
 
     .testimonials .et_pb_column_1_3,
@@ -486,7 +494,7 @@ body #page-container .home-demo-watch:hover {
         padding: 48px;
     }
 }
-
+*/
 /*Vertical cards testimonials*/
 
 .lh-testimonials .testimonials-row {

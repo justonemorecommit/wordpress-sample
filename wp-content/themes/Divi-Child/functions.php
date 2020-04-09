@@ -36,14 +36,22 @@ add_action( 'wp_enqueue_scripts', 'wp_67472455', 1000 );
 
 
 function my_theme_enqueue_styles() {
- 
-    $parent_style = 'laserhub-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
- 
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
+  
+    wp_enqueue_style(
+    	'parent-style',
+    	get_template_directory_uri() . '/style.css'
+    );
+    wp_enqueue_style(
+    	'child-style',
         get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style ),
-        1.817
+        array( 'parent-style' ),
+        sha1_file(get_stylesheet_directory().'/style.css')
+    );
+    wp_enqueue_style(
+    	'onetrust-style',
+        get_stylesheet_directory_uri() . '/onetrust-style.css',
+        array( 'parent-style' ),
+        sha1_file(get_stylesheet_directory().'/onetrust-style.css')
     );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );

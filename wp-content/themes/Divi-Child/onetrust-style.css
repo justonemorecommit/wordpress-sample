@@ -1,0 +1,89 @@
+.category-host-list-btn, .view-cookies-list, div .always-active, #onetrust-pc-btn-handler {
+    color: #3ecb96!important;
+}
+#onetrust-pc-sdk .toggle .checkbox input:checked+label:after {
+    background: #3ecb96 !important;
+    left: 16px !important;
+}
+#onetrust-pc-sdk .toggle .checkbox input:checked+label, #onetrust-pc-sdk .ot-checkbox input:checked~label::before {
+    background: #3ecb96 !important;
+}
+#onetrust-banner-sdk .powered-by-logo, #onetrust-pc-sdk .powered-by-logo {
+    background: none !important;
+}
+#onetrust-banner-sdk h3, #onetrust-banner-sdk p {
+    color: #333!important;
+}
+#onetrust-pc-sdk .ot-sdk-column .btn-group {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#onetrust-banner-sdk .onetrust-close-btn-ui.close-icon {
+	display: none!important;
+}
+#onetrust-pc-sdk #pc-title {
+    font-family: TThoves-DemiBold, sans-serif;
+    font-weight: 500;
+}
+
+/* Solid Buttons */
+#onetrust-pc-sdk .btn-group button,
+#onetrust-accept-btn-handler,
+.ot-sdk-show-settings {
+    font-size: 16px !important;
+    box-shadow: none !important;
+    font-family: TThoves-DemiBold, sans-serif !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    cursor: pointer !important;
+    border: 1px solid #3ed29f !important;
+    padding: 8px 18px !important;
+    line-height: 1.5 !important;
+    border-radius: 3px !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    background-color: #3ed29f !important;
+    border-color: #3ed29f !important;
+    color: #fff !important;
+    text-shadow: 0 0 20px rgba(10, 127, 94, 0.6) !important;
+    cursor: pointer !important;
+}
+
+/* Ghost Button */
+.ot-sdk-show-settings {
+    background-color: transparent !important;
+    color: #3ed29f !important;
+    border-color: #3ed29f !important;
+    text-shadow: none !important;
+    border-width: 3px!important;
+    font-family: TThoves-DemiBold, sans-serif!important;
+    font-size: 18px!important;
+}
+
+/* Change Logo */
+#onetrust-consent-sdk .pc-logo-container {
+    background-image: url(https://laserhub.com/images/LAH_Logo_ohneSubline_bl.svg);
+    height: 32px;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
+#onetrust-consent-sdk .pc-logo {
+    display: none !important;
+}
+
+/*Cookie-List*/
+#cookie-policy-description, h3#cookie-policy-title {
+    display: none!important;
+}
+.ot-table-header {
+    color: #303030!important;
+    font-weight: normal!important;
+}
+.ot-sdk-cookie-policy table {
+    border-radius: 0!important;
+}
+h4.ot-sdk-cookie-policy-group {
+    font-family: TThoves-DemiBold, sans-serif !important;
+    font-weight: 500!important;
+}

@@ -53,19 +53,25 @@ function my_theme_enqueue_styles() {
         array( 'parent-style' ),
         sha1_file(get_stylesheet_directory().'/onetrust-style.css')
     );
+     wp_enqueue_style(
+    	'top-menu',
+        get_stylesheet_directory_uri() . '/top-menu.css',
+        array( 'parent-style' ),
+        sha1_file(get_stylesheet_directory().'/top-menu.css')
+    );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 
 /*** Add descriptions to the menu  ***/
-function prefix_nav_description( $item_output, $item, $depth, $args ) {
+/*function prefix_nav_description( $item_output, $item, $depth, $args ) {
 	if ( !empty( $item->description ) ) {
         $item_output = '<div class="menu-item-wrap">' . $item_output . '<div class="menu-item-description">' . $item->description . '</div></div>';
 	}
 	return $item_output;
 }
 add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 4 );
-
+*/
 
 class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
 {
@@ -236,3 +242,8 @@ function lh_quickedit_javascript() {
 }
 add_action( 'admin_print_footer_scripts-edit.php', 'lh_quickedit_javascript' );
 
+ 
+function register_mobile_menu() {
+    register_nav_menu( 'mobile', __( 'Mobile Menu', 'Divi' ) );
+}
+add_action( 'after_setup_theme', 'register_mobile_menu' );

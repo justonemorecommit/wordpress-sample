@@ -1,0 +1,313 @@
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s;
+    z-index: 99;
+}
+
+.page-header--mobile {
+    bottom: 0;
+    background: #333;
+    z-index: 99;
+    height: 100vh;
+}
+
+.page-header--hidden {
+    transform: translateY(-100%);
+
+}
+.top-menu {
+    background-color: #333;
+    color: #fff;
+    font-family: TThoves-DemiBold, sans-serif;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.top-menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 50px;
+}
+.top-menu__nav > ul > li {
+    padding: 0 14px;
+    position: relative;
+    z-index: 100;
+    height: 44px;
+    line-height: 44px;
+}
+.top-menu__nav > ul > li:hover {
+    color: #5F666D;
+}
+.top-menu__nav > ul {
+    display: flex;
+}
+
+.top-menu__nav > ul > li:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    top: 100%;
+    transition: opacity 0.3s, transform 0.3s, top 0s linear 0s;
+}
+
+.top-menu__icon {
+    height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    width: auto;
+}
+.dropdown-menu__link:hover .top-menu__icon{
+    display: none!important;
+}
+.dropdown-menu__link:hover .top-menu__icon--hover {
+    display: inline-block!important;
+}
+.dropdown-menu__tiles .dropdown-menu__link:hover .top-menu__icon--hover {
+    display: block!important;
+}
+.dropdown-menu__tiles .top-menu__icon--hover, .top-menu__icon--hover {
+    display: none!important;
+}
+
+.top-menu__logo {
+    max-width: 110px;
+    display: flex;
+}
+.top-menu__register {
+    background-color: #56DCAC;
+    color: #000;
+    padding: 5px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.top-menu__register:hover {
+    background-color: #9AEACD;
+}
+
+.top-menu__link {
+    color: #fff;
+    cursor: default;
+}
+.top-menu__link:hover, .top-menu__nav > ul > li:hover .top-menu__link {
+    color: #5F666D;
+}
+.dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    font-size: 16px;
+    line-height: 1.3;
+    background-color: #333;
+    z-index: 99;
+    top: -1000%;
+    left: 0;
+    padding: 14px;
+    min-width: 230px;
+    opacity: 0;
+    transform: translateY(-20px);
+    /*transition: opacity 0.3s, transform 0.3s, height 0s;*/
+    transition: opacity 0.3s, transform 0.3s, top 0s linear 0.3s;
+}
+.dropdown-menu__link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.dropdown-menu__link:hover {
+    color: #F8D559;
+}
+.dropdown-menu li {
+    margin-top: 14px;
+    width: 100%;
+}
+.dropdown-menu--masonry {
+    display: flex;
+    flex-flow: row wrap;
+    width: 530px;
+}
+
+.dropdown-menu__wide-tile {
+/*    flex: 1 100%;*/
+    text-align: center;
+    border-bottom: 1px solid #9A9FA6;
+    padding: 14px 0;
+    width: 100%;
+    color: #fff;
+}
+.dropdown-menu__wide-tile:hover {
+    color: #F8D559;
+}
+
+.dropdown-menu__wrapper {
+    display: flex;
+    width: 100%;
+}
+.dropdown-menu__tiles {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dropdown-menu__tiles ul {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 14px 14px 0 14px;
+}
+.dropdown-menu__tiles .dropdown-menu__link, .dropdown-menu__wide-tile .dropdown-menu__link {
+    display: block;
+}
+.dropdown-menu__tiles li {
+    text-align: center;
+    width: 50%;
+    line-height: 1.3;
+    padding: 6px;
+}
+.dropdown-menu__tiles .top-menu__icon {
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+}
+.dropdown-menu__list {
+    width: 40%;
+    padding: 0 10px;
+}
+.dropdown-menu__list ul {
+    /*flex: 4;*/
+    width: 40%;
+    padding: 6px 14px 0 14px;
+}
+.dropdown-menu__list--all{
+    font-size: 12px;
+    font-family: TThoves-Regular;
+    color: #9A9FA6;
+}
+.dropdown-menu .dropdown-menu__overview {
+    border-bottom: 1px solid #9A9FA6;
+    padding-bottom: 14px;
+    margin-top: 0;
+}
+.dropdown-menu__overview a {
+    color: #fff;
+    width: 100%;
+}
+.dropdown-menu__overview a:hover {
+    color: #F8D559;
+}
+
+.top-menu .js-wpml-ls-legacy-dropdown-click {
+    margin-left: -8px;
+    display: inline-block;
+}
+ /*=====================================mobile menu=======================================*/
+
+.mobile-menu {
+    display: none;
+    height: calc(100vh - 50px);
+    overflow: scroll;
+}
+.page-header--mobile .top-menu {
+    padding: 0 20px 0 6px;
+}
+.page-header--mobile .mobile-menu {
+    display: block;
+    padding: 30px 6px 6px 6px;
+}
+.top-menu__mobile-btn {
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: none;
+    line-height: 0;
+}
+.top-menu__mobile-btn .open-mobile-menu   {
+    display: none;
+}
+.page-header--mobile .open-mobile-menu {
+    display: inline-block;
+}
+
+.page-header--mobile .closed-mobile-menu {
+    display: none;
+}
+
+@media (max-width: 1099px) {
+    .hidden-until-desktop {
+        display: none;
+    }
+}
+@media (min-width: 1100px) {
+    .hidden-from-desktop {
+        display: none;
+    }
+}
+
+.mobile-menu span.top-menu__link {
+    font-size: 20px;
+}
+
+.mobile-dropdown__link {
+    color: #fff;
+    display: flex;
+}
+.mobile-dropdown__overview a {
+    color: #fff;
+}
+.mobile-menu .menu-item-collapsed .top-menu__link {
+    color: #fff;
+}
+.mobile-menu .top-menu__link {
+    color: #5F666D;
+}
+.top-menu__right--mobile .top-menu__link {
+    color: #fff;
+}
+.mobile-dropdown {
+    margin: 6px 20px;
+    font-size: 16px;
+}
+.mobile-dropdown li {
+    margin: 6px 0;
+}
+.disable-scroll {
+    overflow: hidden;
+    padding-right: 0px;
+}
+.menu-item-collapsed .mobile-dropdown {
+    display: none;
+}
+.top-menu__link--mobile::after {
+    margin-left: 4px;
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 0;
+    top: -4px;
+    height: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent currentcolor transparent;
+}
+.menu-item-collapsed .top-menu__link--mobile::after {
+    border-color: currentcolor transparent transparent transparent;
+    top: 0px;
+}
+ .top-menu__right--mobile {
+    font-size: 20px; 
+    margin-top: 20px;
+    line-height: 2;
+ }
+.top-menu__right--mobile .top-menu__register {
+    margin: 0;
+    font-size: 20px;
+}
+
+.mobile-menu .js-wpml-ls-legacy-dropdown-click {
+    width: 50px;
+    margin-left: -8px;
+}

@@ -1554,7 +1554,7 @@ body #page-container .home-demo-watch:hover {
     }
 }
 
-.lh-sub-menu li .menu-item-wrap {
+/*.lh-sub-menu li .menu-item-wrap {
     display: block;
     padding: 8px 24px 8px 60px;
     margin: 8px 0;
@@ -1582,7 +1582,7 @@ body #page-container .home-demo-watch:hover {
     display: block;
     color: white;
     line-height: 1.2;
-}
+}*/
 
 .lh_custom_nav .lh-sub-menu .menu-item-description {
     color: white;
@@ -1757,11 +1757,11 @@ body #page-container .home-demo-watch:hover {
 }
 
 /* Hide on bigger */
-@media (max-width: 1023px) {
+/*@media (max-width: 1023px) {
     .js-wpml-ls-legacy-dropdown-click {
         display: none;
     }
-}
+}*/
 
 /*** Desktop menu ***/
 .lh_custom_nav > li,
@@ -2126,9 +2126,11 @@ body #page-container {
 }
 
 body.band-visible #page-container {
+    padding-top: 95px !important;
+}
+body.single.band-visible #page-container {
     padding-top: 60px !important;
 }
-
 body.band-visible #main-header {
     top: 46px !important;
 }

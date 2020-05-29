@@ -38,9 +38,8 @@
             <a href="<?= __('https://app.laserhub.com/login', 'Divi') ?>" class="top-menu__link"><?= __('Login', 'Divi') ?></a>
         </li>
         <li>
-            <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register"><?= __('Angebot einholen', 'Divi') ?></a>
+            <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register"><?= __('Angebot einholen', 'Divi') ?></a> 
+            <?php do_action('wpml_add_language_selector'); ?>
         </li>
     </ul>
-<?php do_action('wpml_add_language_selector'); ?>
-
 </div>

@@ -80,62 +80,15 @@
 @import url("//hello.myfonts.net/count/3b04ef");
 
   
-@font-face {font-family: 'TTHoves-Black';src: url('tthoves/3B04EF_0_0.eot');src: url('tthoves/3B04EF_0_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_0_0.woff2') format('woff2'),url('tthoves/3B04EF_0_0.woff') format('woff'),url('tthoves/3B04EF_0_0.ttf') format('truetype'),url('tthoves/3B04EF_0_0.svg#wf') format('svg');}
- 
+@font-face {font-family: 'TTHoves-Black';src: url('tthoves/TTHoves-Black.woff2') format('woff2'),url('tthoves/TTHoves-Black.woff') format('woff'),url('tthoves/TTHoves-Black.ttf') format('truetype');}
   
-@font-face {font-family: 'TTHoves-BlackItalic';src: url('tthoves/3B04EF_1_0.eot');src: url('tthoves/3B04EF_1_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_1_0.woff2') format('woff2'),url('tthoves/3B04EF_1_0.woff') format('woff'),url('tthoves/3B04EF_1_0.ttf') format('truetype'),url('tthoves/3B04EF_1_0.svg#wf') format('svg');}
- 
+@font-face {font-family: 'TTHoves-ExtraBold';src: url('tthoves/TTHoves-ExtraBold.woff2') format('woff2'),url('tthoves/TTHoves-ExtraBold.woff') format('woff'),url('tthoves/TTHoves-ExtraBold.ttf') format('truetype');}
+    
+@font-face {font-family: 'TTHoves-DemiBold';src: url('tthoves/TTHoves-DemiBold.woff2') format('woff2'),url('tthoves/TTHoves-DemiBold.woff') format('woff'),url('tthoves/TTHoves-DemiBold.ttf') format('truetype');}
   
-@font-face {font-family: 'TTHoves-Bold';src: url('tthoves/3B04EF_2_0.eot');src: url('tthoves/3B04EF_2_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_2_0.woff2') format('woff2'),url('tthoves/3B04EF_2_0.woff') format('woff'),url('tthoves/3B04EF_2_0.ttf') format('truetype'),url('tthoves/3B04EF_2_0.svg#wf') format('svg');}
- 
+@font-face {font-family: 'TTHoves-Regular';src: url('tthoves/TTHoves-Regular.woff2') format('woff2'),url('tthoves/TTHoves-Regular.woff') format('woff'),url('tthoves/TTHoves-Regular.ttf') format('truetype');}
   
-@font-face {font-family: 'TTHoves-DemiBoldItalic';src: url('tthoves/3B04EF_3_0.eot');src: url('tthoves/3B04EF_3_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_3_0.woff2') format('woff2'),url('tthoves/3B04EF_3_0.woff') format('woff'),url('tthoves/3B04EF_3_0.ttf') format('truetype'),url('tthoves/3B04EF_3_0.svg#wf') format('svg');}
- 
+@font-face {font-family: 'TTHoves-Light';src: url('tthoves/TTHoves-Light.woff2') format('woff2'),url('tthoves/TTHoves-Light.woff') format('woff'),url('tthoves/TTHoves-Light.ttf') format('truetype');}
   
-@font-face {font-family: 'TTHoves-BoldItalic';src: url('tthoves/3B04EF_4_0.eot');src: url('tthoves/3B04EF_4_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_4_0.woff2') format('woff2'),url('tthoves/3B04EF_4_0.woff') format('woff'),url('tthoves/3B04EF_4_0.ttf') format('truetype'),url('tthoves/3B04EF_4_0.svg#wf') format('svg');}
- 
+@font-face {font-family: 'TTHoves-Thin';src: url('tthoves/TTHoves-Thin.woff2') format('woff2'),url('tthoves/TTHoves-Thin.woff') format('woff'),url('tthoves/TTHoves-Thin.ttf') format('truetype');}
   
-@font-face {font-family: 'TTHoves-ExtraBold';src: url('tthoves/3B04EF_5_0.eot');src: url('tthoves/3B04EF_5_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_5_0.woff2') format('woff2'),url('tthoves/3B04EF_5_0.woff') format('woff'),url('tthoves/3B04EF_5_0.ttf') format('truetype'),url('tthoves/3B04EF_5_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-DemiBold';src: url('tthoves/3B04EF_6_0.eot');src: url('tthoves/3B04EF_6_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_6_0.woff2') format('woff2'),url('tthoves/3B04EF_6_0.woff') format('woff'),url('tthoves/3B04EF_6_0.ttf') format('truetype'),url('tthoves/3B04EF_6_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-Hairline';src: url('tthoves/3B04EF_7_0.eot');src: url('tthoves/3B04EF_7_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_7_0.woff2') format('woff2'),url('tthoves/3B04EF_7_0.woff') format('woff'),url('tthoves/3B04EF_7_0.ttf') format('truetype'),url('tthoves/3B04EF_7_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-Regular';src: url('tthoves/3B04EF_8_0.eot');src: url('tthoves/3B04EF_8_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_8_0.woff2') format('woff2'),url('tthoves/3B04EF_8_0.woff') format('woff'),url('tthoves/3B04EF_8_0.ttf') format('truetype'),url('tthoves/3B04EF_8_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-ExtraLight';src: url('tthoves/3B04EF_9_0.eot');src: url('tthoves/3B04EF_9_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_9_0.woff2') format('woff2'),url('tthoves/3B04EF_9_0.woff') format('woff'),url('tthoves/3B04EF_9_0.ttf') format('truetype'),url('tthoves/3B04EF_9_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-Light';src: url('tthoves/3B04EF_A_0.eot');src: url('tthoves/3B04EF_A_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_A_0.woff2') format('woff2'),url('tthoves/3B04EF_A_0.woff') format('woff'),url('tthoves/3B04EF_A_0.ttf') format('truetype'),url('tthoves/3B04EF_A_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-ExtraBoldItalic';src: url('tthoves/3B04EF_B_0.eot');src: url('tthoves/3B04EF_B_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_B_0.woff2') format('woff2'),url('tthoves/3B04EF_B_0.woff') format('woff'),url('tthoves/3B04EF_B_0.ttf') format('truetype'),url('tthoves/3B04EF_B_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-Thin';src: url('tthoves/3B04EF_C_0.eot');src: url('tthoves/3B04EF_C_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_C_0.woff2') format('woff2'),url('tthoves/3B04EF_C_0.woff') format('woff'),url('tthoves/3B04EF_C_0.ttf') format('truetype'),url('tthoves/3B04EF_C_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-ExtraLightItalic';src: url('tthoves/3B04EF_D_0.eot');src: url('tthoves/3B04EF_D_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_D_0.woff2') format('woff2'),url('tthoves/3B04EF_D_0.woff') format('woff'),url('tthoves/3B04EF_D_0.ttf') format('truetype'),url('tthoves/3B04EF_D_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-HairlineItalic';src: url('tthoves/3B04EF_E_0.eot');src: url('tthoves/3B04EF_E_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_E_0.woff2') format('woff2'),url('tthoves/3B04EF_E_0.woff') format('woff'),url('tthoves/3B04EF_E_0.ttf') format('truetype'),url('tthoves/3B04EF_E_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-ThinItalic';src: url('tthoves/3B04EF_F_0.eot');src: url('tthoves/3B04EF_F_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_F_0.woff2') format('woff2'),url('tthoves/3B04EF_F_0.woff') format('woff'),url('tthoves/3B04EF_F_0.ttf') format('truetype'),url('tthoves/3B04EF_F_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-MediumItalic';src: url('tthoves/3B04EF_10_0.eot');src: url('tthoves/3B04EF_10_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_10_0.woff2') format('woff2'),url('tthoves/3B04EF_10_0.woff') format('woff'),url('tthoves/3B04EF_10_0.ttf') format('truetype'),url('tthoves/3B04EF_10_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-Italic';src: url('tthoves/3B04EF_11_0.eot');src: url('tthoves/3B04EF_11_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_11_0.woff2') format('woff2'),url('tthoves/3B04EF_11_0.woff') format('woff'),url('tthoves/3B04EF_11_0.ttf') format('truetype'),url('tthoves/3B04EF_11_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-LightItalic';src: url('tthoves/3B04EF_12_0.eot');src: url('tthoves/3B04EF_12_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_12_0.woff2') format('woff2'),url('tthoves/3B04EF_12_0.woff') format('woff'),url('tthoves/3B04EF_12_0.ttf') format('truetype'),url('tthoves/3B04EF_12_0.svg#wf') format('svg');}
- 
-  
-@font-face {font-family: 'TTHoves-Medium';src: url('tthoves/3B04EF_13_0.eot');src: url('tthoves/3B04EF_13_0.eot?#iefix') format('embedded-opentype'),url('tthoves/3B04EF_13_0.woff2') format('woff2'),url('tthoves/3B04EF_13_0.woff') format('woff'),url('tthoves/3B04EF_13_0.ttf') format('truetype'),url('tthoves/3B04EF_13_0.svg#wf') format('svg');}
- 

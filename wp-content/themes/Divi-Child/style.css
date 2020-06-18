@@ -1553,8 +1553,8 @@ body #page-container .home-demo-watch:hover {
         flex: 0 0 25% !important;
     }
 }
-
-/*.lh-sub-menu li .menu-item-wrap {
+/*war auskommentiert*/
+.lh-sub-menu li .menu-item-wrap {
     display: block;
     padding: 8px 24px 8px 60px;
     margin: 8px 0;
@@ -1582,7 +1582,7 @@ body #page-container .home-demo-watch:hover {
     display: block;
     color: white;
     line-height: 1.2;
-}*/
+}
 
 .lh_custom_nav .lh-sub-menu .menu-item-description {
     color: white;
@@ -1597,7 +1597,7 @@ body #page-container .home-demo-watch:hover {
 #lh_mobile_nav_menu {
     display: none;
 }
-
+/***/
 /**Meta-Menu**/
 
 .meta-menu {
@@ -2122,14 +2122,14 @@ body #page-container .home-demo-watch:hover {
 }
 
 body #page-container {
-    padding-top: 60px !important;
+    padding-top: 50px !important;
 }
 
 body.band-visible #page-container {
-    padding-top: 95px !important;
+    padding-top: 50px !important;
 }
 body.single.band-visible #page-container {
-    padding-top: 60px !important;
+    padding-top: 50px !important;
 }
 body.band-visible #main-header {
     top: 46px !important;
@@ -2773,7 +2773,7 @@ body #lh_mobile_nav_menu {
 
 /* Lists */
 .lh-section .et_pb_text_inner ul {
-    padding: 0 0 16px 32px;
+    padding: 10px;
 }
 
 /* Images */
@@ -4287,7 +4287,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 @media (max-width: 767px){
     .single .new-page-header--overlay_fullwidth .new-page-header__content,
     .single .new-page-header--overlay .new-page-header__content {
-        margin: 25px;
+        margin: 20px;
         bottom: 0;
         padding-left: 0;
     }
@@ -4458,7 +4458,7 @@ margin: 0 auto;
 }
 
 .lh-author .et_pb_column {
-    padding: 30px;
+    padding: 5px;
 }
 
 .lh-authorsimg img {
@@ -4477,6 +4477,9 @@ margin: 0 auto;
     .lh-author .et_pb_row {
         display: flex;
         align-items: center;
+    }
+    .lh-author .et_pb_column {
+        padding: 30px;
     }
 }
 
@@ -4546,13 +4549,13 @@ margin: 0 auto;
         margin-top: 16px !important;
     }
     .single .new-page-header__title {
-        font-size: 30px !important;
+        font-size: 24px !important;
         width: 100%;
         line-height: 1.1;
     }
-    .single .lh-section > .et_pb_row {
+    /*.single .lh-section > .et_pb_row {
         padding-top: 18px;
-    }
+    }*/
 }
 
 .single .new-page-header .published {
@@ -4573,7 +4576,6 @@ margin: 0 auto;
     background: none;
     border: none;
     margin: 0px 0 18px 0;
-    padding: 0;
     box-shadow: 1px 1px 5px 2px #eee;
 }
 .wp-caption img {

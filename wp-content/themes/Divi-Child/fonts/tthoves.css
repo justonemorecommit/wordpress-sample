@@ -83,7 +83,9 @@
 @font-face {font-family: 'TTHoves-Black';src: url('tthoves/TTHoves-Black.woff2') format('woff2'),url('tthoves/TTHoves-Black.woff') format('woff'),url('tthoves/TTHoves-Black.ttf') format('truetype');}
   
 @font-face {font-family: 'TTHoves-ExtraBold';src: url('tthoves/TTHoves-ExtraBold.woff2') format('woff2'),url('tthoves/TTHoves-ExtraBold.woff') format('woff'),url('tthoves/TTHoves-ExtraBold.ttf') format('truetype');}
-    
+
+@font-face {font-family: 'TTHoves-Bold';src: url('tthoves/TTHoves-Bold.woff2') format('woff2'),url('tthoves/TTHoves-Bold.woff') format('woff'),url('tthoves/TTHoves-Bold.ttf') format('truetype');}
+
 @font-face {font-family: 'TTHoves-DemiBold';src: url('tthoves/TTHoves-DemiBold.woff2') format('woff2'),url('tthoves/TTHoves-DemiBold.woff') format('woff'),url('tthoves/TTHoves-DemiBold.ttf') format('truetype');}
   
 @font-face {font-family: 'TTHoves-Regular';src: url('tthoves/TTHoves-Regular.woff2') format('woff2'),url('tthoves/TTHoves-Regular.woff') format('woff'),url('tthoves/TTHoves-Regular.ttf') format('truetype');}

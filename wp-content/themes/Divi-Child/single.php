@@ -39,7 +39,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
         if($hero_type === 'overlay' || $hero_type === 'overlay_fullwidth') {
             $background_source = get_the_post_thumbnail_url(get_the_ID(),'full');
-            $style = "background-image: linear-gradient(to bottom, transparent 50%, black 100%), url('" . $background_source . "')";
+            $style = "background-image: linear-gradient(to bottom, transparent 40%, black 100%), url('" . $background_source . "')";
         } else {
             $style = '';
         }

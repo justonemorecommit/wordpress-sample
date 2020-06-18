@@ -45,6 +45,8 @@
             analytics.page("<?php echo $page_name_for_analytics; ?>");
         }}();
     </script>
+    <script>!function(m,a,i,t,r,e){if(m.RH)return;r=m.RH={},r.uuid=t,r.loaded=0,r.base_url=i,r.queue=[],m.rht=function(){r.queue.push(arguments)};e=a.getElementsByTagName('script')[0],c=a.createElement('script');c.async=!0,c.src=i+'/widget/'+t+'.js',e.parentNode.insertBefore(c,e)}(window,document,'https://app.referralhero.com','MF6bcb95466c');
+    </script>
     <?php echo ob_get_clean();?>
 
 </head>
@@ -84,6 +86,20 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
             });
         });
     </script>
+        <?php if($_COOKIE['band-closed'] != true && is_active_sidebar('top-banner')): ?>
+            <div class="band">
+                <div class="container">
+                    <div class="band__content">
+
+                        <?php
+                        dynamic_sidebar( 'top-banner' );
+                        ?>
+
+                        <button class="js-band-close">&times;</button>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
     <?php include("top-menu.php");
         include("top-menu-mobile.php");
     ?>

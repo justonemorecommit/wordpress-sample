@@ -1852,7 +1852,6 @@ body #page-container .home-demo-watch:hover {
 }
 
 .js-wpml-ls-sub-menu:before {
-
     content: '';
     display: inline-block;
     position: absolute;
@@ -1863,9 +1862,8 @@ body #page-container .home-demo-watch:hover {
     height: 0;
     border-style: solid;
     border-width: 0 8px 8px 8px;
-    border-color: transparent transparent #ffffff transparent;
+    border-color: transparent transparent #fff transparent;
 }
-
 /* Hide switcher from desktop from nav */
 #top-menu-nav .wpml-ls-item {
     display: none;
@@ -2125,14 +2123,14 @@ body #page-container {
     padding-top: 50px !important;
 }
 
-body.band-visible #page-container {
-    padding-top: 50px !important;
+[lang="de-DE"] body.band-visible #page-container {
+    padding-top: 90px !important;
 }
 body.single.band-visible #page-container {
-    padding-top: 50px !important;
+    padding-top: 90px !important;
 }
 body.band-visible #main-header {
-    top: 46px !important;
+    top: 90px !important;
 }
 
 .band {
@@ -2151,19 +2149,9 @@ body.band-visible #main-header {
 @media (max-width: 767px) {
     .band {
         /*position: absolute;*/
-        height: 80px;
+        height: 60px;
         border-bottom: 0;
         border-top: 1px solid #292929;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 989px) {
-    .band {
-        height: 75px;
-    }
-
-    .band p {
-        line-height: 1.2;
     }
 }
 
@@ -3119,9 +3107,9 @@ h1.new-page-header__title {
 }
 
 /* Band overrides */
-.band-visible .new-page-header--regular {
+/*.band-visible .new-page-header--regular {
     margin-top: 35px;
-}
+}*/
 
 
 @media (max-width: 767px) {
@@ -4423,9 +4411,8 @@ margin: 0 auto;
     padding-top: 22px;
 }
 .lh-section .lh-content-heading-wrap .lh-quote-title h2 {
-    font-size: 40px;
-    font-family: TTHoves-ExtraBold, sans-serif;
-    padding: 0;
+    font-size: 38px;
+    font-family: TTHoves-Black, sans-serif;
     font-weight: 700;
 }
 .lh-quote-title .lh-content-heading h2:after {
@@ -4438,11 +4425,11 @@ margin: 0 auto;
 }
 .lh-quote-title h2::after {
     content: "\00ab";
-    margin: 10px;
+    margin: 6px;
 }
 .lh-quote-title h2::before {
     content: "\00bb";
-    margin: 10px;
+    margin: 6px;
 }
 
 
@@ -4562,10 +4549,6 @@ margin: 0 auto;
     margin-bottom: 8px;
     font-size: 14px;
     font-weight: normal;
-}
-
-.single .new-page-header {
-    margin-top: 35px;
 }
 
 .single .entry-content .wp-caption-text {

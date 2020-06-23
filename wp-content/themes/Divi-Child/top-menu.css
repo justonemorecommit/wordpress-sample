@@ -80,15 +80,23 @@
 .top-menu__register {
     background-color: #56DCAC;
     color: #000;
-    padding: 5px;
+    padding: 8px 12px;
     font-size: 16px;
     margin: 0 10px;
+    border-radius: 2px;
+    transition: background 0.15s;
 }
 
 .top-menu__register:hover {
     background-color: #9AEACD;
 }
 
+.top-menu__login {
+    color: #fff;
+}
+.top-menu__login:hover {
+    color: #F8D559;
+}
 .top-menu__link {
     color: #fff;
     cursor: default;
@@ -107,21 +115,23 @@
     top: -1000%;
     left: 0;
     padding: 14px;
-    min-width: 230px;
+    min-width: 250px;
     opacity: 0;
     transform: translateY(-20px);
     /*transition: opacity 0.3s, transform 0.3s, height 0s;*/
     transition: opacity 0.3s, transform 0.3s, top 0s linear 0.3s;
+    /*transition: opacity ease-out 0.2s, transform 0s ease-out 0.2s, top 0s ease-out 0.2s;*/
 }
 .dropdown-menu__link {
     display: flex;
     align-items: center;
     color: #fff;
     width: 100%;
+    transition: color 0.2s;
 }
 .dropdown-menu__link:hover {
     color: #F8D559;
-    transition-duration: 0.2s;
+/*    transition-duration: 0.2s;*/
 }
 .dropdown-menu li {
     margin-top: 14px;
@@ -215,12 +225,12 @@
 }
 .page-header--mobile .mobile-menu {
     display: block;
-    padding: 30px 20px 0px 20px;
+    padding: 10px 20px 0px 20px;
 }
 .top-menu__mobile-btn {
     height: 50px;
-    width: 50px;
     background: none;
+    padding: 0;
     border: none;
     line-height: 0;
 }
@@ -247,8 +257,8 @@
 }
 
 .mobile-menu span.top-menu__link {
-    font-size: 20px;
-    line-height: 2;
+    font-size: 18px;
+    line-height: 2.5;
 }
 
 .mobile-dropdown__link {
@@ -264,6 +274,7 @@
 }
 .mobile-menu .menu-item-collapsed .top-menu__link {
     color: #fff;
+    font-family: TTHoves-DemiBold, sans-serif;
 }
 .mobile-menu .top-menu__link {
     color: #5F666D;
@@ -302,11 +313,12 @@
     top: 0px;
 }
  .top-menu__right--mobile {
-    font-size: 20px; 
+    font-size: 18px; 
     margin-top: 20px;
     padding: 10px 0;
-    line-height: 2;
+    line-height: 2.5;
     border-top: 1px solid #9A9FA6;
+    font-family: TTHoves-DemiBold, sans-serif;
  }
 .top-menu__right--mobile .top-menu__register {
     margin: 0;
@@ -316,4 +328,8 @@
 .mobile-menu .js-wpml-ls-legacy-dropdown-click {
     width: 50px;
     margin-left: -8px;
+    margin-top: 5px;
 }
+
+/*Sprachwechsler*/
+

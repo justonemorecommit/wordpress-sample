@@ -53,7 +53,7 @@
                   <!-- Dritte Menüebene: List -->
                   <ul class="dropdown-menu__list">
                     <li>
-                      <span class="dropdown-menu__list--all">Weiterbearbeitungsverfahren</span>
+                      <span class="dropdown-menu__list--all"><?= __('Weiterbearbeitungsverfahren', 'Divi') ?></span>
                     </li>
                     <?php foreach ($menu as $key => $item_list): if( $item_list->menu_item_parent == $item_sub->ID ): ?>
                       <li>
@@ -99,7 +99,7 @@
       </ul>
     </nav>
     <div class="top-menu__right hidden-until-desktop">
-      <a href="<?= __('https://app.laserhub.com/login', 'Divi') ?>" class="top-menu__link"><?= __('Login', 'Divi') ?></a>
+      <a href="<?= __('https://app.laserhub.com/login', 'Divi') ?>" class="top-menu__login"><?= __('Login', 'Divi') ?></a>
       <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register"><?= __('Angebot einholen', 'Divi') ?></a>
       <?php do_action('wpml_add_language_selector'); ?>
     </div>

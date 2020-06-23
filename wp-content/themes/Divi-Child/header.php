@@ -66,18 +66,19 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
                 $("body").toggleClass("disable-scroll");
             });
             //hide header on scroll
-            let posY=window.scrollY
+            let posY=window.pageYOffset
             let scrollDir="down"
             $(document).on("scroll", function(data) {
-                
-                if (posY<window.scrollY && scrollDir === "up"){
+                let currentPosY = window.pageYOffset >= 0 ? window.pageYOffset : 0;
+                console.log("last: " + posY + " current: " + currentPosY)
+                if (posY<currentPosY && scrollDir === "up"){
                     scrollDir="down"
                     $("#page-header").addClass("page-header--hidden");
-                } else if (posY>window.scrollY && scrollDir === "down"){
+                } else if (posY>currentPosY && scrollDir === "down"){
                     scrollDir="up"
                     $("#page-header").removeClass("page-header--hidden");
                 }
-                posY=window.scrollY; 
+                posY=currentPosY; 
             });
             //Mobile dropdown
             $(".top-menu__link--mobile").on("click", function(event) {

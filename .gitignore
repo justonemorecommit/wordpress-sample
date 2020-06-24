@@ -2,15 +2,23 @@
 .DS_Store
 *thumbs.db
 thumbs.db
-wp-admin/
-wp-includes/
-wp-*.php
 index.php
 license.txt
 xmlrpc.php
-wp-content/
-!wp-content/plugins/laserhub-building-block
-!wp-content/themes/Divi-Child
 docker-compose.yml
-theme
 mysql
+
+# Ignore general wordpress files
+wp-admin/
+wp-includes/
+wp-*.php
+
+# Ignore everything in wp-content/ except for the Divi-Child theme and
+# the building blocks plugin
+wp-content/*
+!wp-content/plugins
+wp-content/plugins/*
+!wp-content/plugins/laserhub-building-block
+!wp-content/themes
+wp-content/themes/*
+!wp-content/themes/Divi-Child

@@ -48,23 +48,35 @@ export default {
   .job-container {
     max-width: 600px;
     margin: 0 auto;
+    h3 {
+      font-family: TTHoves-DemiBold, sans-serif;
+      font-size: 20px;
+      }
+    p {
+      font-family: TTHoves-Regular, sans-serif;
+      font-size: 16px;
+      }
   }
   .job-row {
-    background-color: white;
+    background-color: #fff;
     display: flex;
-    padding: 15px 25px;
+    padding: 20px 30px;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 0;
+    margin: 25px 0;
   }
   .btn-job-application {
-    color: #000;
-    background-color: #56DCAC;
+    color: #56DCAC;
+    background-color: #fff;
+    border: 3px solid #56DCAC;
     padding: 10px 15px;
     font-family: TTHoves-DemiBold, sans-serif;
     text-decoration: none;
+    font-size: 16px;
+    border-radius: 2px;
   }
   .btn-job-application:hover {
-    background-color: #9AEACD;
+    background-color: #56DCAC;
+    color: #000;
    }
 </style>

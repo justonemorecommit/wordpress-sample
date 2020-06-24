@@ -18,7 +18,8 @@
  * =============================================================================== */
 
 function divichild_enqueue_scripts() {
-	wp_enqueue_script( 'child-js', get_stylesheet_directory_uri() . '/js/child.js' ,'' , 1.6);
+	wp_enqueue_script( 'child-js', get_stylesheet_directory_uri() . '/js/child.js' ,'' , sha1_file(get_stylesheet_directory().'/js/child.js'));
+	wp_enqueue_script( 'vue-js', get_stylesheet_directory_uri() . '/vue/dist/js/app.js' ,'' , sha1_file(get_stylesheet_directory().'/vue/dist/js/app.js'), true);
 	wp_localize_script( 'child-js', 'lhtranslation', array(
 	        'material_expand' => __('Alle anzeigen', 'Divi')
     ) );
@@ -58,6 +59,12 @@ function my_theme_enqueue_styles() {
         get_stylesheet_directory_uri() . '/top-menu.css',
         array( 'parent-style' ),
         sha1_file(get_stylesheet_directory().'/top-menu.css')
+    );
+    wp_enqueue_style(
+    	'Vue-css',
+        get_stylesheet_directory_uri() . '/vue/dist/css/app.css',
+        array( 'parent-style' ),
+        sha1_file(get_stylesheet_directory().'/vue/dist/css/app.css')
     );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );

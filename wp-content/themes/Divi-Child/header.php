@@ -65,12 +65,11 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
                 //disable background scroll on mobile menu
                 $("body").toggleClass("disable-scroll");
             });
-            //hide header on scroll
-            let posY=window.pageYOffset
-            let scrollDir="down"
+            //hide header on more than 50px scroll
+            let posY = 90
+            let scrollDir="up"
             $(document).on("scroll", function(data) {
-                let currentPosY = window.pageYOffset >= 0 ? window.pageYOffset : 0;
-                console.log("last: " + posY + " current: " + currentPosY)
+                let currentPosY = Math.max(window.pageYOffset, 90);
                 if (posY<currentPosY && scrollDir === "up"){
                     scrollDir="down"
                     $("#page-header").addClass("page-header--hidden");
@@ -88,7 +87,7 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
             });
         });
     </script>
-        <?php if($_COOKIE['band-closed'] != true && is_active_sidebar('top-banner')): ?>
+        <?php if (!$_COOKIE['band-closed'] && is_active_sidebar('top-banner')): ?>
             <div class="band">
                 <div class="container">
                     <div class="band__content">

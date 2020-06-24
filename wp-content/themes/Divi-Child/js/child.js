@@ -1,61 +1,6 @@
 jQuery(document).ready(function ($) {
 
 
-    /* Check if already scrolled or navigation is hovered */
-    var mainHeader = $("#main-header");
-
-    //set scrolling variables
-    var scrolling = false,
-        previousTop = 0,
-        currentTop = 0,
-        scrollDelta = 1,
-        scrollOffset = 60;
-
-    $(window).on('scroll', function () {
-        if (!scrolling) {
-            scrolling = true;
-            (!window.requestAnimationFrame)
-                ? setTimeout(autoHideHeader, 250)
-                : requestAnimationFrame(autoHideHeader);
-        }
-    });
-
-
-    $(window).focus(function(e) {
-        mainHeader.removeClass('is-hidden');
-    });
-
-    function autoHideHeader() {
-        var currentTop = $(window).scrollTop();
-        checkSimpleNavigation(currentTop);
-        previousTop = currentTop;
-        scrolling = false;
-    }
-
-    function checkSimpleNavigation(currentTop) {
-
-        /* Check if menu is hovered */
-        var hovered = $(".lh_custom_nav").find("li:hover").length > 0;
-        var visibleMenu = $('#lh_mobile_nav_menu').hasClass('lh_mobile_nav_menu--visible');
-
-        if(hovered || visibleMenu != false) {
-            return;
-        }
-
-        //there's no secondary nav or secondary nav is below primary nav
-        if (previousTop - currentTop > scrollDelta ) {
-            //if scrolling up...
-
-            mainHeader.closest('.header-wrap').removeClass('header-hidden');
-            mainHeader.removeClass('is-hidden');
-        } else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
-            //if scrolling down...
-            mainHeader.addClass('is-hidden');
-            mainHeader.closest('.header-wrap').addClass('header-hidden');
-        }
-    }
-
-
     //add link
     function appendExpandButton() {
         $('.material-options__list ul').each(function () {
@@ -158,7 +103,7 @@ jQuery(document).ready(function ($) {
     $( ".sub-menu" ).wrap( "<div class='sub-menu-wrap'></div>" );
 
     /* Vote band */
-    if(Cookies.get('band-closed') != 'true') {
+    if(!Cookies.get('band-closed') ) {
 
         $('body').addClass('band-visible')
         $('.band').addClass('band--visible');
@@ -174,6 +119,7 @@ jQuery(document).ready(function ($) {
         });
     } else {
         $('.band').remove();
+        $('body').removeClass('band-visible')
     }
 
     /* Submenu click */

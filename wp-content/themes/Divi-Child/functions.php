@@ -18,11 +18,25 @@
  * =============================================================================== */
 
 function divichild_enqueue_scripts() {
-	wp_enqueue_script( 'child-js', get_stylesheet_directory_uri() . '/js/child.js' ,'' , sha1_file(get_stylesheet_directory().'/js/child.js'));
-	wp_enqueue_script( 'vue-js', get_stylesheet_directory_uri() . '/vue/dist/js/app.js' ,'' , sha1_file(get_stylesheet_directory().'/vue/dist/js/app.js'), true);
-	wp_localize_script( 'child-js', 'lhtranslation', array(
-	        'material_expand' => __('Alle anzeigen', 'Divi')
-    ) );
+  wp_enqueue_script(
+    'child-js',
+    get_stylesheet_directory_uri() . '/js/child.js',
+    ['jquery'],
+    sha1_file(get_stylesheet_directory() . '/js/child.js')
+  );
+  wp_localize_script(
+    'child-js',
+    'lhtranslation',
+    array('material_expand' => __('Alle anzeigen', 'Divi'))
+  );
+
+  wp_enqueue_script(
+    'vue-js',
+    get_stylesheet_directory_uri() . '/vue/dist/js/app.js',
+    '',
+    sha1_file(get_stylesheet_directory() . '/vue/dist/js/app.js'),
+    true
+  );
 
 }
 add_action( 'wp_enqueue_scripts', 'divichild_enqueue_scripts' );

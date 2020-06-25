@@ -2,21 +2,21 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<?php
-	elegant_description();
-	elegant_keywords();
-	elegant_canonical();
+    <?php
+    elegant_description();
+    elegant_keywords();
+    elegant_canonical();
 
-	/**
-	 * Fires in the head, before {@see wp_head()} is called. This action can be used to
-	 * insert elements into the beginning of the head before any styles or scripts.
-	 *
-	 * @since 1.0
-	 */
-	do_action( 'et_head_meta' );
+    /**
+     * Fires in the head, before {@see wp_head()} is called. This action can be used to
+     * insert elements into the beginning of the head before any styles or scripts.
+     *
+     * @since 1.0
+     */
+    do_action( 'et_head_meta' );
 
-	$template_directory_uri = get_template_directory_uri();
-	?>
+    $template_directory_uri = get_template_directory_uri();
+    ?>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
@@ -25,7 +25,7 @@
     </script>
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/Divi-Child/fonts/tthoves.css"/>
 
-	<?php wp_head();
+    <?php wp_head();
 
         $internal_name = get_post_meta( get_the_ID(), 'lh_internal_name', true );
 
@@ -37,10 +37,9 @@
             $page_name_for_analytics = get_the_title($orig_id);
         }
 
-    
     ob_start();?>
     <script type="text/javascript">
-                 !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
             analytics.load("7cp8b9jFwyvGTugGOYY4nyD6qCDvNN5Y");
             analytics.page("<?php echo $page_name_for_analytics; ?>");
         }}();
@@ -77,7 +76,7 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
                     scrollDir="up"
                     $("#page-header").removeClass("page-header--hidden");
                 }
-                posY=currentPosY; 
+                posY=currentPosY;
             });
             //Mobile dropdown
             $(".top-menu__link--mobile").on("click", function(event) {

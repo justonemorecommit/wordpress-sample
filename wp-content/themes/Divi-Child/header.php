@@ -86,7 +86,7 @@ $page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : '
             });
         });
     </script>
-        <?php if (!$_COOKIE['band-closed'] && is_active_sidebar('top-banner')): ?>
+        <?php if (!array_key_exists('band-closed', $_COOKIE) && is_active_sidebar('top-banner')): ?>
             <div class="band">
                 <div class="container">
                     <div class="band__content">

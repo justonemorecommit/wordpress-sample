@@ -63,9 +63,9 @@ class LH_icons extends ET_Builder_Module {
 		$content = $this->props['content'];
 
 		// Render module content
-
+		$html = mb_convert_encoding("<html><body>$content</body></html>", 'HTML-ENTITIES', "UTF-8");
 		$DOM = new DOMDocument;
-		$DOM->loadHTML('<html><body>' . $content . '</body></html>');   // loading page contents
+		@$DOM->loadHTML($html); // loading page contents
 		$divs = $this->getElementsByClassName($DOM->getElementsByTagName('div'), 'lh-icons__item');
 		$length = count($divs);
 

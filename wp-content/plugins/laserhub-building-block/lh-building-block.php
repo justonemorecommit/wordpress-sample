@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Lasehub Building Blocks
-Plugin URI:  
+Plugin URI:
 Description: Custom building blocks
 Version:     1.0.0
-Author:      
-Author URI:  
+Author:
+Author URI:
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: lhbb-lh-building-blocks

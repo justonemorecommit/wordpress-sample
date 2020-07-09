@@ -3,26 +3,23 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <?php
-    elegant_description();
-    elegant_keywords();
-    elegant_canonical();
+        elegant_description();
+        elegant_keywords();
+        elegant_canonical();
 
-    /**
-     * Fires in the head, before {@see wp_head()} is called. This action can be used to
-     * insert elements into the beginning of the head before any styles or scripts.
-     *
-     * @since 1.0
-     */
-    do_action( 'et_head_meta' );
-
-    $template_directory_uri = get_template_directory_uri();
+        /**
+         * Fires in the head, before {@see wp_head()} is called. This action can be used to
+         * insert elements into the beginning of the head before any styles or scripts.
+         *
+         * @since 1.0
+         */
+        do_action( 'et_head_meta' );
     ?>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-    <script type="text/javascript">
-        document.documentElement.className = 'js';
-    </script>
+    <script type="text/javascript">document.documentElement.className = 'js';</script>
+
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/Divi-Child/fonts/tthoves.css"/>
 
     <?php wp_head();

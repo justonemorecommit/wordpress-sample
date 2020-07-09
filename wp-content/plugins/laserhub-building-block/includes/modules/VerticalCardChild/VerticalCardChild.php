@@ -14,10 +14,10 @@ class Lh_Vert_Card_Child extends ET_Builder_Module {
 	public $type                     = 'child';
 
 	// Module item's attribute that will be used for module item label on modal
-	public $child_title_var          = 'title';
+	public $child_title_var          = 'label';
 
 	// If the attribute defined on $this->child_title_var is empty, this attribute will be used instead
-	public $child_title_fallback_var = 'subtitle';
+	public $child_title_fallback_var = 'content';
 
 	// Full Visual Builder support
 	public $vb_support = 'on';
@@ -35,19 +35,19 @@ class Lh_Vert_Card_Child extends ET_Builder_Module {
 
 		// Default label for module item. Basically if $this->child_title_var and $this->child_title_fallback_var
 		// attributes are empty, this default text will be used instead as item label
-		$this->advanced_setting_title_text = esc_html__( 'Vertical card', 'et_builder' );
+		// $this->advanced_setting_title_text = esc_html__( 'Vertical card', 'et_builder' );
 
 		// Module item's modal title
-		$this->settings_text = esc_html__( 'Vertical card settings', 'et_builder' );
+		// $this->settings_text = esc_html__( 'Vertical card settings', 'et_builder' );
 
 		// Toggle settings
-		$this->settings_modal_toggles  = array(
-			'general'  => array(
-				'toggles' => array(
-					'main_content' => esc_html__( 'Card', 'dicm-divi-custom-modules' ),
-				),
-			),
-		);
+		// $this->settings_modal_toggles  = array(
+		// 	'general'  => array(
+		// 		'toggles' => array(
+		// 			'main_content' => esc_html__( 'Card', 'dicm-divi-custom-modules' ),
+		// 		),
+		// 	),
+		// );
 	}
 
 	/**
@@ -60,6 +60,12 @@ class Lh_Vert_Card_Child extends ET_Builder_Module {
 
 	public function get_fields() {
 		return array(
+			'label'=> array(
+				'label'              => esc_html__('Label'),
+				'type'               => 'text',
+				'option_category'    => 'basic_option',
+				'toggle_slug'        => 'main_content',
+			),
 			'image'=> array(
 				'label'              => esc_html__( 'Image'),
 				'type'               => 'upload',
@@ -106,8 +112,8 @@ class Lh_Vert_Card_Child extends ET_Builder_Module {
 					<?php echo $content; ?>
                 </div>
 
-                <?php if(!empty($link)) { 
-                	echo '<a href="' . $link . '" class="lh-card__more">' .  __( 'Mehr', 'Divi' ) . '</a>';		
+                <?php if(!empty($link)) {
+                	echo '<a href="' . $link . '" class="lh-card__more">' .  __( 'Mehr', 'Divi' ) . '</a>';
               	 } ?>
             </div>
 

@@ -6,7 +6,7 @@
           <h3>{{job.text}}</h3>
           <p>{{job.additionalPlain.split("\n")[0]}}</p>
         </div>
-        <a class="btn-job-application" :href="job.applyUrl">Apply now
+        <a class="btn-job-application" :href="job.hostedUrl">See more
         </a>
       </div>           
     </div>

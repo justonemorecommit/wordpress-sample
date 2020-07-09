@@ -105,8 +105,8 @@
     </div>
     <div class="top-menu__right hidden-from-desktop">
       <button id="btn_mobile-menu-toggle" class="top-menu__mobile-btn">
-        <img class="closed-mobile-menu" src="<?= get_stylesheet_directory_uri(); ?>/images/bars-solid.svg" width="20px">
-        <img class="open-mobile-menu" src="<?= get_stylesheet_directory_uri(); ?>/images/times-solid.svg" width="20px">
+        <img class="closed-mobile-menu" src="<?= get_stylesheet_directory_uri(); ?>/images/bars-solid.svg" width="20">
+        <img class="open-mobile-menu" src="<?= get_stylesheet_directory_uri(); ?>/images/times-solid.svg" width="20">
       </button>
     </div>
   </div>

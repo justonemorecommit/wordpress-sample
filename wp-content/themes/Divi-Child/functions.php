@@ -94,17 +94,17 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 4 );
 */
 
-class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
-{
-  function start_lvl( &$output, $depth = 0, $args = array() ) {
-    $indent = str_repeat("\t", $depth);
-    $output .= "\n$indent<div class='lh-sub-menu-wrap'><ul class='lh-sub-menu'>\n";
-  }
-  function end_lvl( &$output, $depth = 0, $args = array() ) {
-    $indent = str_repeat("\t", $depth);
-    $output .= "$indent</ul></div>\n";
-  }
-}
+// class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
+// {
+//   function start_lvl( &$output, $depth = 0, $args = array() ) {
+//     $indent = str_repeat("\t", $depth);
+//     $output .= "\n$indent<div class='lh-sub-menu-wrap'><ul class='lh-sub-menu'>\n";
+//   }
+//   function end_lvl( &$output, $depth = 0, $args = array() ) {
+//     $indent = str_repeat("\t", $depth);
+//     $output .= "$indent</ul></div>\n";
+//   }
+// }
 
 /* Register sidebar for the banner */
 register_sidebar( array(
@@ -134,8 +134,6 @@ register_sidebar( array(
 // Add custom field & quickedit field
 
 /* Set metabox for the lh_internal_name */
-add_action( 'add_meta_boxes', 'add_analytics_metaboxes' );
-
 function add_analytics_metaboxes() {
   add_meta_box(
     'lh_internal_name',
@@ -146,32 +144,36 @@ function add_analytics_metaboxes() {
     'high'
   );
 }
-
-function lh_internal_name_callback() {
-  global $post;
-  // Nonce field to validate form request came from current site
-  wp_nonce_field( basename( __FILE__ ), 'lh_internal_name_field' );
-  // Get the location data if it's already been entered
-  $internal_name = get_post_meta( $post->ID, 'lh_internal_name', true );
-  // Output the field
-  echo '<input type="text" name="lh_internal_name" value="' . esc_textarea( $internal_name )  . '" class="widefat">';
-}
+// add_action( 'add_meta_boxes', 'add_analytics_metaboxes' );
 
 
+// function lh_internal_name_callback() {
+//   global $post;
+//   // Nonce field to validate form request came from current site
+//   wp_nonce_field( basename( __FILE__ ), 'lh_internal_name_field' );
+//   // Get the location data if it's already been entered
+//   $internal_name = get_post_meta( $post->ID, 'lh_internal_name', true );
+//   // Output the field
+//   echo '<input type="text" name="lh_internal_name" value="' . esc_textarea( $internal_name )  . '" class="widefat">';
+// }
+
+
+// DEACTIVATED
 /*** Add to quick edit fields ***/
-function lh_quickedit_custom_posts_columns( $posts_columns ) {
-  $posts_columns['lh_internal_name'] = __( 'Analytics name', 'generatewp' );
-  return $posts_columns;
-}
-add_filter( 'manage_post_posts_columns', 'lh_quickedit_custom_posts_columns' );
+// function lh_quickedit_custom_posts_columns( $posts_columns ) {
+//   $posts_columns['lh_internal_name'] = __( 'Analytics name', 'generatewp' );
+//   return $posts_columns;
+// }
+// add_filter( 'manage_post_posts_columns', 'lh_quickedit_custom_posts_columns' );
 
-function lh_quickedit_custom_pages_columns( $posts_columns ) {
-  $posts_columns['lh_internal_name'] = __( 'Analytics name', 'generatewp' );
-  return $posts_columns;
-}
-add_filter( 'manage_pages_columns', 'lh_quickedit_custom_pages_columns' );
+// DEACTIVATED
+// function lh_quickedit_custom_pages_columns( $posts_columns ) {
+//   $posts_columns['lh_internal_name'] = __( 'Analytics name', 'generatewp' );
+//   return $posts_columns;
+// }
+// add_filter( 'manage_pages_columns', 'lh_quickedit_custom_pages_columns' );
 
-
+// DEACTIVATED
 function lh_quickedit_custom_column_display( $column_name, $post_id ) {
   if ( 'lh_internal_name' == $column_name ) {
     $internal_name = get_post_meta( $post_id, 'lh_internal_name', true );
@@ -183,8 +185,10 @@ function lh_quickedit_custom_column_display( $column_name, $post_id ) {
     }
   }
 }
-add_action( 'manage_post_posts_custom_column', 'lh_quickedit_custom_column_display', 10, 2 );
+// add_action( 'manage_post_posts_custom_column', 'lh_quickedit_custom_column_display', 10, 2 );
 
+
+// DEACTIVATED
 function lh_quickedit_custom_column_display_( $column_name, $post_id ) {
   if ( 'lh_internal_name' == $column_name ) {
     $internal_name = get_post_meta( $post_id, 'lh_internal_name', true );
@@ -196,11 +200,10 @@ function lh_quickedit_custom_column_display_( $column_name, $post_id ) {
     }
   }
 }
-add_action( 'manage_pages_custom_column', 'lh_quickedit_custom_column_display_', 10, 2 );
+// add_action( 'manage_pages_custom_column', 'lh_quickedit_custom_column_display_', 10, 2 );
 
 
-
-
+// DEACTIVATED
 function lh_quickedit_fields( $column_name, $post_type ) {
   if ( 'lh_internal_name' != $column_name )
     return;
@@ -219,8 +222,9 @@ function lh_quickedit_fields( $column_name, $post_type ) {
   </fieldset>
   <?php
 }
-add_action( 'quick_edit_custom_box', 'lh_quickedit_fields', 10, 2 );
+// add_action( 'quick_edit_custom_box', 'lh_quickedit_fields', 10, 2 );
 
+// DEACTIVATED
 function lh_quickedit_save_post( $post_id, $post ) {
   // if called by autosave, then bail here
   if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
@@ -235,9 +239,9 @@ function lh_quickedit_save_post( $post_id, $post ) {
     update_post_meta( $post_id, 'lh_internal_name', $_POST['lh_internal_name'] );
   }
 }
-add_action( 'save_post', 'lh_quickedit_save_post', 10, 2 );
+// add_action( 'save_post', 'lh_quickedit_save_post', 10, 2 );
 
-
+// DEACTIVATED
 function lh_quickedit_javascript() {
 //  $current_screen = get_current_screen();
   // Ensure jQuery library loads
@@ -261,7 +265,7 @@ function lh_quickedit_javascript() {
   </script>
   <?php
 }
-add_action( 'admin_print_footer_scripts-edit.php', 'lh_quickedit_javascript' );
+// add_action( 'admin_print_footer_scripts-edit.php', 'lh_quickedit_javascript' );
 
 
 function register_mobile_menu() {

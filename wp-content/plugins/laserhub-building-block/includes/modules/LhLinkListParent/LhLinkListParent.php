@@ -79,7 +79,7 @@ class LH_Link_List extends ET_Builder_Module {
 		// Render module content
 		$output = '<div class="lh-link-list">' . $link_list_content . '</div>';
 
-		if($new_tab == 'yes') {
+		if($new_tab == 'on') {
 			$output = str_replace('<a', '<a target="_blank" ', $output);
 		}
 

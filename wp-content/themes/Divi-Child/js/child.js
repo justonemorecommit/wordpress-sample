@@ -139,21 +139,21 @@ jQuery(document).ready(function ($) {
     });
 
 
-    $('.mobile_menu_bar').on('click', function (e) {
+    // $('.mobile_menu_bar').on('click', function (e) {
 
-        if(!$('#lh_mobile_nav_menu').hasClass('lh_mobile_nav_menu--visible')) {
-            scrollLock.disablePageScroll();
-        } else {
-            scrollLock.enablePageScroll();
-        }
-        $('#lh_mobile_nav_menu').toggleClass('lh_mobile_nav_menu--visible');
-    });
+    //     if(!$('#lh_mobile_nav_menu').hasClass('lh_mobile_nav_menu--visible')) {
+    //         scrollLock.disablePageScroll();
+    //     } else {
+    //         scrollLock.enablePageScroll();
+    //     }
+    //     $('#lh_mobile_nav_menu').toggleClass('lh_mobile_nav_menu--visible');
+    // });
 
-    $(window).on('resize', function () {
-        if($('.lh_mobile_nav_menu--visible').is(":visible") == false) {
-            scrollLock.enablePageScroll();
-        }
-    });
+    // $(window).on('resize', function () {
+    //     if($('.lh_mobile_nav_menu--visible').is(":visible") == false) {
+    //         scrollLock.enablePageScroll();
+    //     }
+    // });
 
 
     $('.lh_custom_mobile_nav > .menu-item-has-children > a ').on('click', function (e) {

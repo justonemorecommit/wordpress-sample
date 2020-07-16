@@ -333,3 +333,28 @@
 
 /*Sprachwechsler*/
 
+
+/* AB Testing of register header cta */
+
+a.top-menu__register-a {
+    display: none;
+}
+a.top-menu__register-b {
+    display: none;
+}
+a.top-menu__register-c {
+    display: none;
+}
+
+a.top-menu__register-a:lang("FR-fr") {
+    display: none!important;
+}
+a.top-menu__register-b:lang("FR-fr") {
+    display: none!important;
+}
+a.top-menu__register-c:lang("FR-fr") {
+    display: none!important;
+}
+a.top-menu__register-original:lang("FR-fr") {
+    display: inline!important;
+}

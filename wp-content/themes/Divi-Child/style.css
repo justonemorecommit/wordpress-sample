@@ -3263,6 +3263,9 @@ a.lh-link-list-item {
 .logo-banner--customers .et_pb_row + .et_pb_row {
     padding-top: 0!important;
 }
+.logo-banner--customers .et_pb_column {
+    min-height: 0;
+}
 /*** Lh cards ***/
 
 /* Adjust section heading */

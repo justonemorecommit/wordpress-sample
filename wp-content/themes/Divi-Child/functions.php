@@ -20,7 +20,7 @@
 /**
  * Enqueue JS files (frontend)
  */
-function divichild_enqueue_scripts() {
+function register_scripts() {
   wp_enqueue_script(
     'child-js',
     get_stylesheet_directory_uri() . '/js/child.js',
@@ -39,22 +39,15 @@ function divichild_enqueue_scripts() {
     sha1_file(get_stylesheet_directory() . '/vue/dist/js/app.js'),
     true
   );
-}
-add_action( 'wp_enqueue_scripts', 'divichild_enqueue_scripts' );
-
-/**
- * deregister divi style
- */
-function wp_67472455() {
   wp_dequeue_style( 'divi-style' );
   wp_deregister_style( 'divi-style' );
 }
-add_action( 'wp_enqueue_scripts', 'wp_67472455', 1000 );
+add_action( 'wp_enqueue_scripts', 'register_scripts' );
 
 /**
  * Enqueue CSS files (frontend)
  */
-function my_theme_enqueue_styles() {
+function register_styles() {
   wp_enqueue_style(
     'parent-style',
     get_template_directory_uri() . '/style.css'
@@ -84,7 +77,22 @@ function my_theme_enqueue_styles() {
     sha1_file(get_stylesheet_directory().'/vue/dist/css/app.css')
   );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'register_styles' );
+
+
+/**
+ * Register Styles/Scripts specifically for the admin panel
+ */
+function register_admin_scripts_and_styles () {
+  wp_enqueue_style(
+    'admin-styles',
+    get_stylesheet_directory_uri() . '/admin.css',
+    [],
+    sha1_file(get_stylesheet_directory() . '/admin.css')
+  );
+};
+add_action('admin_enqueue_scripts', 'register_admin_scripts_and_styles');
+
 
 /**
  * Prevent divi from cropping images in the blog
@@ -98,6 +106,10 @@ function lh_remove_featured_post_cropping($sizes) {
 }
 add_filter('et_theme_image_sizes', 'lh_remove_featured_post_cropping');
 
+
+/**
+ * Register menus and sidebars
+ */
 function register_mobile_menu() {
   /**
    * Register Mobile Menu

@@ -101,9 +101,7 @@
     <div class="top-menu__right hidden-until-desktop">
       <a href="<?= __('https://app.laserhub.com/login', 'Divi') ?>" class="top-menu__login"><?= __('Login', 'Divi') ?></a>
       <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register top-menu__register-original"><?= __('Angebot einholen', 'Divi') ?></a>
-      <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register top-menu__register-a"><?= __('Registrieren', 'Divi') ?></a>
-      <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register top-menu__register-b"><?= __('Kostenlos registrieren', 'Divi') ?></a>
-      <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register top-menu__register-c"><?= __('Kostenlos testen', 'Divi') ?></a>
+      <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register top-menu__register-a"><?= __('Jetzt kalkulieren', 'Divi') ?></a>
       <?php do_action('wpml_add_language_selector'); ?>
     </div>
     <div class="top-menu__right hidden-from-desktop">

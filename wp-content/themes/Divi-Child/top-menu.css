@@ -339,22 +339,9 @@
 a.top-menu__register-a {
     display: none;
 }
-a.top-menu__register-b {
-    display: none;
-}
-a.top-menu__register-c {
-    display: none;
-}
-
-a.top-menu__register-a:lang("FR-fr") {
+a.top-menu__register-a:lang(fr-FR) {
     display: none!important;
 }
-a.top-menu__register-b:lang("FR-fr") {
-    display: none!important;
-}
-a.top-menu__register-c:lang("FR-fr") {
-    display: none!important;
-}
-a.top-menu__register-original:lang("FR-fr") {
+a.top-menu__register-original:lang(fr-FR) {
     display: inline!important;
 }

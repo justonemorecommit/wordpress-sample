@@ -1,3 +1,13 @@
+/**
+ * Admin specific
+ */
+body.admin-bar .page-header {
+    top: 32px;
+}
+
+/**
+ * General Styles
+ */
 .page-header {
     position: fixed;
     top: 0;
@@ -313,7 +323,7 @@
     top: 0px;
 }
  .top-menu__right--mobile {
-    font-size: 18px; 
+    font-size: 18px;
     margin-top: 20px;
     padding: 10px 0;
     line-height: 2.5;

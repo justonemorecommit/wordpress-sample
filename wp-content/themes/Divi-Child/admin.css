@@ -1,0 +1,17 @@
+/**
+ * Fix admin column widths
+ */
+.fixed .column-comments,
+.column-icl_translations {
+  width: 24px;
+}
+.fixed .column-categories,
+.fixed .column-rel,
+.fixed .column-response,
+.fixed .column-role,
+.fixed .column-tags {
+  width: 10%;
+}
+.column-title {
+  width: 35%;
+}

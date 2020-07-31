@@ -22,17 +22,14 @@
 
   <link rel="stylesheet" type="text/css" href="/wp-content/themes/Divi-Child/fonts/tthoves.css"/>
 
-  <?php wp_head(); ?>
-
   <!-- OneTrust Cookies Consent Notice start -->
-  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="00ac846c-2458-40e1-a909-33381b39a8b4"></script>
-  <script type="text/javascript">
-    function OptanonWrapper() { }
-  </script>
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="00ac846c-2458-40e1-a909-33381b39a8b4-test"></script>
   <!-- OneTrust Cookies Consent Notice end -->
 
+  <?php wp_head(); ?>
+
   <!-- Segment start -->
-  <script type="text/javascript">
+  <script type="text/javascript" class="optanon-category-C0003">
     !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
       analytics.load("7cp8b9jFwyvGTugGOYY4nyD6qCDvNN5Y");
       // analytics.page("<?php //echo $page_name_for_analytics; ?>");
@@ -41,7 +38,7 @@
   <!-- Segment end -->
 
   <!-- referralhero start -->
-  <script>
+  <script type="text/javascript" class="optanon-category-C0003">
     !function(m,a,i,t,r,e){if(m.RH)return;r=m.RH={},r.uuid=t,r.loaded=0,r.base_url=i,r.queue=[],m.rht=function(){r.queue.push(arguments)};e=a.getElementsByTagName('script')[0],c=a.createElement('script');c.async=!0,c.src=i+'/widget/'+t+'.js',e.parentNode.insertBefore(c,e)}(window,document,'https://app.referralhero.com','MF6bcb95466c');
   </script>
   <!-- referralhero end -->

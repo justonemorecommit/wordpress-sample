@@ -1,4 +1,4 @@
- <?php
+<?php
   $menu = wp_get_nav_menu_items( wp_get_nav_menu_name( 'mobile' ) );
 ?>
  <div id="mobile-menu" class="mobile-menu">
@@ -38,7 +38,7 @@
             <a href="<?= __('https://app.laserhub.com/login', 'Divi') ?>" class="top-menu__link"><?= __('Login', 'Divi') ?></a>
         </li>
         <li>
-            <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register"><?= __('Angebot einholen', 'Divi') ?></a> 
+            <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register"><?= __('Angebot einholen', 'Divi') ?></a>
             <?php do_action('wpml_add_language_selector'); ?>
         </li>
     </ul>

@@ -23,8 +23,13 @@
   <link rel="stylesheet" type="text/css" href="/wp-content/themes/Divi-Child/fonts/tthoves.css"/>
 
   <!-- OneTrust Cookies Consent Notice start -->
-  <script type="text/javascript" src="https://cdn.cookielaw.org/consent/00ac846c-2458-40e1-a909-33381b39a8b4-test/OtAutoBlock.js"></script>
-  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="00ac846c-2458-40e1-a909-33381b39a8b4-test"></script>
+  <?php if (defined('WP_DEBUG') && WP_DEBUG): ?>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/00ac846c-2458-40e1-a909-33381b39a8b4-test/OtAutoBlock.js"></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="00ac846c-2458-40e1-a909-33381b39a8b4-test"></script>
+  <?php else: ?>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/00ac846c-2458-40e1-a909-33381b39a8b4/OtAutoBlock.js"></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="00ac846c-2458-40e1-a909-33381b39a8b4"></script>
+  <?php endif; ?>
   <!-- OneTrust Cookies Consent Notice end -->
 
   <?php wp_head(); ?>

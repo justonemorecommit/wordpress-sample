@@ -19,7 +19,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-#onetrust-banner-sdk .onetrust-close-btn-ui.close-icon {
+#onetrust-banner-sdk #onetrust-close-btn-container {
 	display: none!important;
 }
 #onetrust-pc-sdk #pc-title {

@@ -2480,7 +2480,7 @@ body #lh_mobile_nav_menu {
 }*/
 
 .lh-content-heading h2 {
-    font-size: 32px;
+    font-size: 30px;
     width: fit-content;
     padding: 10px;
     margin: 0 auto;
@@ -2611,7 +2611,7 @@ body #lh_mobile_nav_menu {
 }
 
 .lh-section .et_pb_text h2 {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .lh-section .et_pb_text h3 {
@@ -2725,10 +2725,6 @@ body #lh_mobile_nav_menu {
 @media (min-width: 768px) and (max-width: 1023px) {
     .lh-section .et_pb_text h1 {
         font-size: 40px !important;
-    }
-
-    .lh-section .et_pb_text h2 {
-        font-size: 36px !important;
     }
 
     .lh-section--wide .et_pb_row {
@@ -3866,6 +3862,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 .lh-cta .et_pb_button {
     font-size: 18px!important;
     font-family: TThoves-DemiBold, sans-serif;
+    text-decoration: none!important;
 }
 
 @media (max-width: 1023px) {
@@ -4395,7 +4392,9 @@ margin: 0 auto;
 .single .lh-section--narrow {
     max-width:700px;
 }
-
+.single .lh-content-heading h2:after {
+    border-bottom: none;
+}
 .single #main-content > .container,
 .single .new-page-header,
 .single #content-area {

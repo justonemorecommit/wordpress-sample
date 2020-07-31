@@ -60,15 +60,15 @@ function register_styles() {
   );
   wp_enqueue_style(
     'onetrust-style',
-    get_stylesheet_directory_uri() . '/onetrust-style.css',
+    get_stylesheet_directory_uri() . '/css/onetrust-style.css',
     array( 'parent-style' ),
-    sha1_file(get_stylesheet_directory().'/onetrust-style.css')
+    sha1_file(get_stylesheet_directory().'/css/onetrust-style.css')
   );
   wp_enqueue_style(
     'top-menu',
-    get_stylesheet_directory_uri() . '/top-menu.css',
+    get_stylesheet_directory_uri() . '/css/top-menu.css',
     array( 'parent-style' ),
-    sha1_file(get_stylesheet_directory().'/top-menu.css')
+    sha1_file(get_stylesheet_directory().'/css/top-menu.css')
   );
   wp_enqueue_style(
     'Vue-css',
@@ -86,9 +86,9 @@ add_action( 'wp_enqueue_scripts', 'register_styles' );
 function register_admin_scripts_and_styles () {
   wp_enqueue_style(
     'admin-styles',
-    get_stylesheet_directory_uri() . '/admin.css',
+    get_stylesheet_directory_uri() . '/css/admin.css',
     [],
-    sha1_file(get_stylesheet_directory() . '/admin.css')
+    sha1_file(get_stylesheet_directory() . '/css/admin.css')
   );
 };
 add_action('admin_enqueue_scripts', 'register_admin_scripts_and_styles');

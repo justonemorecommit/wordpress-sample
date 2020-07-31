@@ -27,7 +27,7 @@
   <!-- OneTrust Cookies Consent Notice start -->
   <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="00ac846c-2458-40e1-a909-33381b39a8b4"></script>
   <script type="text/javascript">
-  function OptanonWrapper() { }
+    function OptanonWrapper() { }
   </script>
   <!-- OneTrust Cookies Consent Notice end -->
 
@@ -41,7 +41,8 @@
   <!-- Segment end -->
 
   <!-- referralhero start -->
-  <script>!function(m,a,i,t,r,e){if(m.RH)return;r=m.RH={},r.uuid=t,r.loaded=0,r.base_url=i,r.queue=[],m.rht=function(){r.queue.push(arguments)};e=a.getElementsByTagName('script')[0],c=a.createElement('script');c.async=!0,c.src=i+'/widget/'+t+'.js',e.parentNode.insertBefore(c,e)}(window,document,'https://app.referralhero.com','MF6bcb95466c');
+  <script>
+    !function(m,a,i,t,r,e){if(m.RH)return;r=m.RH={},r.uuid=t,r.loaded=0,r.base_url=i,r.queue=[],m.rht=function(){r.queue.push(arguments)};e=a.getElementsByTagName('script')[0],c=a.createElement('script');c.async=!0,c.src=i+'/widget/'+t+'.js',e.parentNode.insertBefore(c,e)}(window,document,'https://app.referralhero.com','MF6bcb95466c');
   </script>
   <!-- referralhero end -->
 
@@ -94,8 +95,8 @@
       </div>
     <?php endif; ?>
   <?php
-    require_once("top-menu.php");
-    require_once("top-menu-mobile.php");
+    require_once("partials/top-menu.php");
+    require_once("partials/top-menu-mobile.php");
   ?>
 </header>
 <!--end-->

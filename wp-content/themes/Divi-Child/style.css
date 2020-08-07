@@ -3699,7 +3699,10 @@ a.lh-link-list-item {
 
 
 /********Hubspot-forms*************/
-
+.hbspt-form {
+    max-width: 450px;
+    margin: 0 auto;
+}
 .hbspt-form label {display:none;}
 .hbspt-form .hs-button, .hbspt-form .hs-button:hover {
     font-family: TThoves-DemiBold, sans-serif!important;
@@ -3711,7 +3714,7 @@ a.lh-link-list-item {
     float: right;
     border: 2px #3ecb96;
     border-radius: 3px;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff!important;
     cursor: pointer;
 }
@@ -3719,11 +3722,26 @@ a.lh-link-list-item {
 .hbspt-form .field .hs-input:not([type=checkbox]):not([type=radio]), .hs-custom-style>div>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {
     width: 100%;
     font-size: 16px;
-    padding: 10px;
+    padding: 6px;
     margin-bottom: 18px;
 }
-
-.legal-consent-container .field.hs-form-field {margin-bottom: 8px;}
+.hs-form-booleancheckbox {
+    margin-bottom: 0!important;
+}
+.legal-consent-container .hs-form-booleancheckbox-display input {
+    margin-top:6px;
+}
+.legal-consent-container .field.hs-form-field {
+    margin-bottom: 0;
+}
+.hbspt-form a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: underline;
+}
+.hbspt-form .actions {
+    margin-top: 20px;
+}
 
 label.hs-form-booleancheckbox-display {display: block;}
 
@@ -3732,15 +3750,20 @@ ul li.hs-form-booleancheckbox::before {content: none;}
 .hbspt-form label.hs-error-msg {
     display: inline!important;
     color: red;
-    font-size: 13px;
+    font-size: 12px;
     float: right;
     margin-top: -16px;
 }
-
-.hbspt-form ul.inputs-list {
-    margin-left: -32px;
+.hbspt-form p {
+    font-size: 12px;
 }
 
+.hbspt-form ul.inputs-list {
+    margin-left: -13px;
+}
+.hs-form select {
+    padding: 6px 2px!important;
+}
 /*Event-registration-form*/
 
 /*** Reg Form ***/

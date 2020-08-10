@@ -3703,7 +3703,13 @@ a.lh-link-list-item {
     max-width: 450px;
     margin: 0 auto;
 }
-.hbspt-form label {display:none;}
+.hbspt-form label {
+    display:none;
+}
+.hbspt-label-form .hbspt-form label {
+    display: block;
+    font-size: 16px;
+}
 .hbspt-form .hs-button, .hbspt-form .hs-button:hover {
     font-family: TThoves-DemiBold, sans-serif!important;
     font-weight: 500;

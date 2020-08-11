@@ -20,64 +20,70 @@
 /**
  * Enqueue JS files (frontend)
  */
-function register_scripts() {
+function lh_register_scripts() {
   wp_enqueue_script(
-    'child-js',
+    'lh-divi-child-js',
     get_stylesheet_directory_uri() . '/js/child.js',
     ['jquery'],
-    sha1_file(get_stylesheet_directory() . '/js/child.js')
+    sha1_file(get_stylesheet_directory() . '/js/child.js'),
+    true
   );
   wp_localize_script(
-    'child-js',
+    'lh-divi-child-js',
     'lhtranslation',
-    array('material_expand' => __('Alle anzeigen', 'Divi'))
+    ['material_expand' => __('Alle anzeigen', 'Divi')]
   );
   wp_enqueue_script(
-    'vue-js',
+    'lh-vue-js',
     get_stylesheet_directory_uri() . '/vue/dist/js/app.js',
     '',
     sha1_file(get_stylesheet_directory() . '/vue/dist/js/app.js'),
     true
   );
-  wp_dequeue_style( 'divi-style' );
-  wp_deregister_style( 'divi-style' );
 }
-add_action( 'wp_enqueue_scripts', 'register_scripts' );
+add_action('wp_enqueue_scripts', 'lh_register_scripts', 11);
+
 
 /**
  * Enqueue CSS files (frontend)
+ *
+ * 1. Make sure to execute after Divi
+ * 2. Divi autmoatically includes child theme css, so we have to remove it again
  */
-function register_styles() {
+function lh_register_styles () {
+  wp_dequeue_style('divi-style'); /* 2 */
+  wp_deregister_style('divi-style'); /* 2 */
+
   wp_enqueue_style(
     'parent-style',
     get_template_directory_uri() . '/style.css'
   );
   wp_enqueue_style(
-    'child-style',
+    'lh-divi-child-style',
     get_stylesheet_directory_uri() . '/style.css',
-    array( 'parent-style' ),
+    ['parent-style'],
     sha1_file(get_stylesheet_directory().'/style.css')
   );
   wp_enqueue_style(
-    'onetrust-style',
+    'lh-onetrust-style',
     get_stylesheet_directory_uri() . '/css/onetrust-style.css',
-    array( 'parent-style' ),
+    ['parent-style'],
     sha1_file(get_stylesheet_directory().'/css/onetrust-style.css')
   );
   wp_enqueue_style(
-    'top-menu',
+    'lh-top-menu-style',
     get_stylesheet_directory_uri() . '/css/top-menu.css',
-    array( 'parent-style' ),
+    ['parent-style'],
     sha1_file(get_stylesheet_directory().'/css/top-menu.css')
   );
   wp_enqueue_style(
-    'Vue-css',
+    'lh-vue-style',
     get_stylesheet_directory_uri() . '/vue/dist/css/app.css',
-    array( 'parent-style' ),
+    ['parent-style'],
     sha1_file(get_stylesheet_directory().'/vue/dist/css/app.css')
   );
 }
-add_action( 'wp_enqueue_scripts', 'register_styles' );
+add_action('wp_enqueue_scripts', 'lh_register_styles', 11); /* 1 */
 
 
 /**

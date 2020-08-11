@@ -1,11 +1,12 @@
 /*======================================
 Theme Name: Laserhub Divi Child
-Theme URI: https://divicake.com/
-Description: Child Theme For laserhub
+Theme URI: https://laserhub.com
+Description: Divi child theme for Laserhub
 Version: 1.1
-Author: Divi Cake
-Author URI: https://divicake.com/
+Author: Laserhub
+Author URI: https://laserhub.com
 Template: Divi
+Text Domain: lh-divi-child
 ======================================*/
 
 body, input, textarea, select {
@@ -1956,7 +1957,7 @@ body #page-container .home-demo-watch:hover {
 
 .page-id-10596 #top-menu-nav,
 .page-id-10596 .mobile_menu_bar,
-.page-id-10596 .et-top-navigation__cta 
+.page-id-10596 .et-top-navigation__cta
  {
 	display: none;
 }
@@ -3033,9 +3034,9 @@ a.lh-link-list-item {
 }
 
 .lh_link_list_child a:after {
-    content: ' '; 
+    content: ' ';
     display: inline-block;
-    background: url(./images/link-list-arrow.svg) no-repeat; 
+    background: url(./images/link-list-arrow.svg) no-repeat;
     height: 28px;
     margin-left: auto;
     flex: 0 0 28px;
@@ -3877,7 +3878,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
     }
 }
 
-/*** CTA ***/ 
+/*** CTA ***/
 
 .lh-cta-wrap {
     margin-bottom: 0 !important;
@@ -4128,7 +4129,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 .single .new-page-header__content {
     z-index: 1;
     position: relative;
-    font-size:14px; 
+    font-size:14px;
     font-weight:normal;
 }
 
@@ -4164,7 +4165,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 #main-content .container {padding-top:0!important;}
 #main-content .lh-section {margin: 60px auto;}
 
-.single .new-page-header--overlay_fullwidth .new-page-header__content, 
+.single .new-page-header--overlay_fullwidth .new-page-header__content,
 .single .new-page-header--overlay .new-page-header__content {
     position: absolute;
     bottom: 59px;
@@ -4177,10 +4178,10 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
     padding-left: 20px;
 }
 
-.single .new-page-header--overlay_fullwidth .new-page-header__title, 
+.single .new-page-header--overlay_fullwidth .new-page-header__title,
 .single .new-page-header--overlay .new-page-header__title {color: #fff;}
 
-.new-page-header--overlay_fullwidth .published__icon svg path, 
+.new-page-header--overlay_fullwidth .published__icon svg path,
 .new-page-header--overlay .published__icon svg path {fill: #fff;}
 
 @media (max-width: 1020px){
@@ -4323,7 +4324,7 @@ margin: 0 auto;
 /*Quote*/
 
 .lh-section.lh-outstanding-quote {
-    margin-top: 50px; 
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .lh-outstanding-quote .et_pb_row {
@@ -4355,7 +4356,7 @@ margin: 0 auto;
 /*author*/
 
 .lh-author {
-    border: 1px solid black; 
+    border: 1px solid black;
     background-color: rgba(0,0,0,0.1)!important;
 }
 
@@ -4368,8 +4369,8 @@ margin: 0 auto;
 }
 
 .lh-authorsimg img {
-    border-radius: 100%; 
-    max-width: 175px; 
+    border-radius: 100%;
+    max-width: 175px;
     display: block;
 }
 .lh-authorsimg .et_pb_image_wrap {
@@ -4392,14 +4393,14 @@ margin: 0 auto;
 /*Subtitle-img*/
 
 .lh-subtitle-img {
-    margin: 0 auto; 
-    max-width: 400px; 
+    margin: 0 auto;
+    max-width: 400px;
     height: auto;
 }
 .lh-subtitle-img-text {
-    padding-top: 8px; 
-    max-width: 400px; 
-    margin: 0 auto; 
+    padding-top: 8px;
+    max-width: 400px;
+    margin: 0 auto;
     font-style: italic;
 }
 .single .lh-subtitle-img-text p {
@@ -4489,30 +4490,30 @@ margin: 0 auto;
 /***********EVENT LPS BUILDING BLOCKS*********/
 /*Agenda*/
 .agenda .et_pb_text_inner ul li {
-    padding: 10px; 
-    line-height: 2; 
+    padding: 10px;
+    line-height: 2;
     margin-bottom:0!important;
 }
 .agenda ul li::before {
     content: none;
 }
 .agenda ul li::after {
-    content: " "; 
-    display: block; 
-    border-bottom: 1px solid black; 
+    content: " ";
+    display: block;
+    border-bottom: 1px solid black;
     padding: 10px;
 }
 .agenda ul strong {
-    background: #f8d559; 
+    background: #f8d559;
     padding: 10px;
 }
 
 /*Vertical Cards People*/
 .lh-cards-people .lh-card__media {
-    height: 150px; 
-    width: 150px; 
-    padding-bottom: 0; 
-    margin: 0 auto; 
+    height: 150px;
+    width: 150px;
+    padding-bottom: 0;
+    margin: 0 auto;
     border-radius: 100%;
 }
 .lh-cards-people .lh-card--vertical {
@@ -4560,14 +4561,14 @@ body.band-visible .home-hero-wrap {
 }
 
 #usp_section2 .et_pb_text_inner p {
-    margin-top:0px; 
-    color:#fff; 
-    font-size:16px; 
+    margin-top:0px;
+    color:#fff;
+    font-size:16px;
     text-align:center!important;
 }
 @media (min-width: 980px) {
 	#usp_section2 .et_pb_text_inner p {
-        text-align:left; 
+        text-align:left;
         margin-top: 106px;
     }
 }

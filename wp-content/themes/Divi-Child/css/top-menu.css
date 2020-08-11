@@ -340,18 +340,3 @@ body.admin-bar .page-header {
     margin-left: -8px;
     margin-top: 5px;
 }
-
-/*Sprachwechsler*/
-
-
-/* AB Testing of register header cta */
-
-a.top-menu__register-a {
-    display: none;
-}
-a.top-menu__register-a:lang(fr-FR) {
-    display: none!important;
-}
-a.top-menu__register-original:lang(fr-FR) {
-    display: inline!important;
-}

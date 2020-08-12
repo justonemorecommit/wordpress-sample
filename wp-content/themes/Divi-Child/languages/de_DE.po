@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-08-11T10:14:04+00:00\n"
-"PO-Revision-Date: 2020-08-12 10:29+0200\n"
+"PO-Revision-Date: 2020-08-12 11:06+0200\n"
 "X-Generator: Poedit 2.4.1\n"
 "X-Domain: lh-divi-child\n"
 "Last-Translator: \n"
@@ -56,3 +56,7 @@ msgstr "https://app.laserhub.com/login?lang=de"
 #: partials/top-menu.php:56
 msgid "Additional processes"
 msgstr "Weiterbearbeitungsverfahren"
+
+#: partials/top-menu.php:7
+msgid "/"
+msgstr "/"

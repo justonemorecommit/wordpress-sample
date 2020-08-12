@@ -4,7 +4,7 @@
 
 <div class="top-menu">
   <div class="top-menu__wrapper">
-    <a class="top-menu__logo" href="https://laserhub.com/">
+    <a class="top-menu__logo" href="<?= __('/','lh-divi-child') ?>">
       <img src="<?= get_stylesheet_directory_uri(); ?>/images/logo.svg"/>
     </a>
     <nav class="top-menu__nav hidden-until-desktop">

@@ -53,7 +53,7 @@
                   <!-- Dritte Menüebene: List -->
                   <ul class="dropdown-menu__list">
                     <li>
-                      <span class="dropdown-menu__list--all"><?= __('Weiterbearbeitungsverfahren', 'Divi') ?></span>
+                      <span class="dropdown-menu__list--all"><?= __('Additional processes', 'lh-divi-child') ?></span>
                     </li>
                     <?php foreach ($menu as $key => $item_list): if( $item_list->menu_item_parent == $item_sub->ID ): ?>
                       <li>

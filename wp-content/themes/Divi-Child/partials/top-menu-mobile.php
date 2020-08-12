@@ -35,10 +35,10 @@
     </ul>
     <ul class="top-menu__right--mobile">
         <li>
-            <a href="<?= __('https://app.laserhub.com/login', 'Divi') ?>" class="top-menu__link"><?= __('Login', 'Divi') ?></a>
+            <a href="<?= __('https://app.laserhub.com/login', 'lh-divi-child') ?>" class="top-menu__link"><?= __('Login', 'lh-divi-child') ?></a>
         </li>
         <li>
-            <a href="<?= __('https://app.laserhub.com/register', 'Divi') ?>" target="_blank" class="top-menu__register"><?= __('Angebot einholen', 'Divi') ?></a>
+            <a href="<?= __('https://app.laserhub.com/register', 'lh-divi-child') ?>" target="_blank" class="top-menu__register"><?= __('Calculate Now', 'lh-divi-child') ?></a>
             <?php do_action('wpml_add_language_selector'); ?>
         </li>
     </ul>

@@ -9,10 +9,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-08-11T10:14:04+00:00\n"
-"PO-Revision-Date: 2020-08-12 10:18+0200\n"
+"PO-Revision-Date: 2020-08-12 10:26+0200\n"
 "X-Generator: Poedit 2.4.1\n"
 "X-Domain: lh-divi-child\n"
-"Last-Translator: Lukas Hermann <luke.antix@gmail.com>\n"
+"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Language: fr_FR\n"
 
@@ -52,3 +52,7 @@ msgstr "https://app.laserhub.com/register?lang=fr"
 #: partials/top-menu.php:102
 msgid "https://app.laserhub.com/login"
 msgstr "https://app.laserhub.com/login?lang=fr"
+
+#: partials/top-menu.php:56
+msgid "Additional processes"
+msgstr "Usinage complémentaire"

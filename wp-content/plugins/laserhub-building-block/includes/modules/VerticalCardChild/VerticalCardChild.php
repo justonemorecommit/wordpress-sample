@@ -113,7 +113,7 @@ class Lh_Vert_Card_Child extends ET_Builder_Module {
                 </div>
 
                 <?php if(!empty($link)) {
-                	echo '<a href="' . $link . '" class="lh-card__more">' .  __( 'Mehr', 'Divi' ) . '</a>';
+                	echo '<a href="' . $link . '" class="lh-card__more">' .  __( 'More', 'lhbb-lh-building-blocks' ) . '</a>';
               	 } ?>
             </div>
 

@@ -1,12 +1,12 @@
 .category-host-list-btn, .view-cookies-list, div .always-active, #onetrust-pc-btn-handler {
-    color: #3ecb96!important;
+    color: #56DCAC!important;
 }
 #onetrust-pc-sdk .toggle .checkbox input:checked+label:after {
-    background: #3ecb96 !important;
+    background: #56DCAC !important;
     left: 16px !important;
 }
 #onetrust-pc-sdk .toggle .checkbox input:checked+label, #onetrust-pc-sdk .ot-checkbox input:checked~label::before {
-    background: #3ecb96 !important;
+    background: #56DCAC !important;
 }
 #onetrust-banner-sdk .powered-by-logo, #onetrust-pc-sdk .powered-by-logo {
     background: none !important;
@@ -38,14 +38,14 @@
     text-align: center !important;
     vertical-align: middle !important;
     cursor: pointer !important;
-    border: 1px solid #3ed29f !important;
+    border: 1px solid #56DCAC !important;
     padding: 8px 18px !important;
     line-height: 1.5 !important;
     border-radius: 3px !important;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
-    background-color: #3ed29f !important;
-    border-color: #3ed29f !important;
-    color: #fff !important;
+    background-color: #56DCAC !important;
+    border-color: #56DCAC !important;
+    color: #000 !important;
     text-shadow: 0 0 20px rgba(10, 127, 94, 0.6) !important;
     cursor: pointer !important;
 }
@@ -53,8 +53,8 @@
 /* Ghost Button */
 .ot-sdk-show-settings {
     background-color: transparent !important;
-    color: #3ed29f !important;
-    border-color: #3ed29f !important;
+    color: #56DCAC !important;
+    border-color: #56DCAC !important;
     text-shadow: none !important;
     border-width: 3px!important;
     font-family: TThoves-DemiBold, sans-serif!important;

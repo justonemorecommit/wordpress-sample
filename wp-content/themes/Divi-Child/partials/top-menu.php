@@ -102,11 +102,7 @@
       <a href="<?= __('https://app.laserhub.com/login', 'lh-divi-child') ?>" class="top-menu__login">
         <?= __('Login', 'lh-divi-child') ?>
       </a>
-      <a
-        href="<?= __('https://app.laserhub.com/register', 'lh-divi-child') ?>"
-        target="_blank"
-        class="top-menu__register"
-      >
+      <a href="<?= __('https://app.laserhub.com/register', 'lh-divi-child') ?>" target="_blank" class="top-menu__register">
         <?= __('Calculate Now', 'lh-divi-child') ?>
       </a>
       <?php do_action('wpml_add_language_selector'); ?>

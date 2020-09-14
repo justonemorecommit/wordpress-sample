@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-08-11T10:14:04+00:00\n"
-"PO-Revision-Date: 2020-08-12 11:06+0200\n"
+"PO-Revision-Date: 2020-09-10 13:23+0200\n"
 "X-Generator: Poedit 2.4.1\n"
 "X-Domain: lh-divi-child\n"
 "Last-Translator: \n"
@@ -32,10 +32,6 @@ msgstr "Divi child theme for Laserhub"
 #. Author of the theme
 msgid "Laserhub"
 msgstr "Laserhub"
-
-#: partials/top-menu.php:108
-msgid "Random Test"
-msgstr "Random Test FR"
 
 #: partials/top-menu.php:109
 msgid "Calculate Now"
@@ -60,3 +56,4 @@ msgstr "Usinage complémentaire"
 #: partials/top-menu.php:7
 msgid "/"
 msgstr "/fr/"
+

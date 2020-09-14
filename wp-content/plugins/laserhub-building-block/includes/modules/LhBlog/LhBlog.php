@@ -129,8 +129,8 @@ class Lh_Blog extends ET_Builder_Module {
             <?php endwhile; ?>
 
             <div class="pagination clearfix">
-                <div class="alignright"><?php next_posts_link(esc_html__('Ältere Einträge  ›', 'Divi'), $query->max_num_pages); ?></div>
-                <div class="alignleft"><?php previous_posts_link(esc_html__('‹ Neuere Einträge', 'Divi')); ?></div>
+                <div class="alignright"><?php next_posts_link(esc_html__('Older entries ›', 'lh-divi-child'), $query->max_num_pages); ?></div>
+                <div class="alignleft"><?php previous_posts_link(esc_html__('‹ Newer entries', 'lh-divi-child')); ?></div>
             </div>
 
         </div>

@@ -8,7 +8,7 @@ Author:
 Author URI:
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: lhbb-lh-building-blocks
+Text Domain: lh-building-blocks
 Domain Path: /languages
 
 Lasehub Building Blocks is free software: you can redistribute it and/or modify

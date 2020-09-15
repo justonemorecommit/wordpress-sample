@@ -10,10 +10,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-08-12T08:47:33+00:00\n"
-"PO-Revision-Date: 2020-09-15 11:11+0200\n"
+"PO-Revision-Date: 2020-09-15 11:26+0200\n"
 "X-Generator: Poedit 2.4.1\n"
-"X-Domain: lhbb-lh-building-blocks\n"
-"Last-Translator: \n"
+"X-Domain: lh-building-blocks\n"
+"Last-Translator: Lukas Hermann <luke.antix@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: de_DE\n"
 
@@ -25,10 +25,6 @@ msgstr "Lasehub Building Blocks"
 msgid "Custom building blocks"
 msgstr "Custom Building Blocks"
 
-#: includes/modules/VerticalCardChild/VerticalCardChild.php:116
-msgid "More"
-msgstr "Mehr"
-
 #: includes/modules/LhBlog/LhBlog.php:132
 msgid "Older entries ›"
 msgstr "Ältere Einträge ›"
@@ -36,3 +32,7 @@ msgstr "Ältere Einträge ›"
 #: includes/modules/LhBlog/LhBlog.php:133
 msgid "‹ Newer entries"
 msgstr "‹ Neuere Einträge"
+
+#: includes/modules/VerticalCardChild/VerticalCardChild.php:116
+msgid "More"
+msgstr "Mehr"

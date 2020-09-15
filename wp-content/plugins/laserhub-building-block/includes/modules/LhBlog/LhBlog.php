@@ -61,13 +61,13 @@ class Lh_Blog extends ET_Builder_Module {
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
             	if(empty($category)) {
-            		// all = no category is selected	
-       				 $query = new WP_Query(array('posts_per_page' => '5', 'paged' => $paged)); 
-            		
+            		// all = no category is selected
+       				 $query = new WP_Query(array('posts_per_page' => '5', 'paged' => $paged));
+
             	} else {
             		// single category selected
             		// two or more selected
-            		 $query = new WP_Query(array('posts_per_page' => '5', 'paged' => $paged, 'cat' => $category)); 
+            		 $query = new WP_Query(array('posts_per_page' => '5', 'paged' => $paged, 'cat' => $category));
             	} ?>
 
 
@@ -129,8 +129,8 @@ class Lh_Blog extends ET_Builder_Module {
             <?php endwhile; ?>
 
             <div class="pagination clearfix">
-                <div class="alignright"><?php next_posts_link(esc_html__('Older entries ›', 'lh-divi-child'), $query->max_num_pages); ?></div>
-                <div class="alignleft"><?php previous_posts_link(esc_html__('‹ Newer entries', 'lh-divi-child')); ?></div>
+                <div class="alignright"><?php next_posts_link(esc_html__('Older entries ›', 'lh-building-blocks'), $query->max_num_pages); ?></div>
+                <div class="alignleft"><?php previous_posts_link(esc_html__('‹ Newer entries', 'lh-building-blocks')); ?></div>
             </div>
 
         </div>

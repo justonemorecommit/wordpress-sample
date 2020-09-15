@@ -33,7 +33,11 @@ if ( ! function_exists( 'lhbb_initialize_extension' ) ):
  * @since 1.0.0
  */
 function lhbb_initialize_extension() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/LhBuildingBlocks.php';
+  require_once plugin_dir_path( __FILE__ ) . 'includes/LhBuildingBlocks.php';
+
+  $domain = 'lh-building-blocks';
+  $plugin_rel_path = dirname(plugin_basename(__FILE__)) . '/languages';
+  load_plugin_textdomain($domain, false, $plugin_rel_path);
 }
 add_action( 'divi_extensions_init', 'lhbb_initialize_extension' );
 endif;

@@ -3764,6 +3764,13 @@ a.leadin-button.leadin-button-primary {
     max-height: 100%!important;
 }
 @media (max-width: 767px) {
+    .lh-slider .et_pb_container {
+        height: unset!important;
+    }
+    .lh-slider .et_pb_slides h2, .lh-slider .et_pb_slides h2 a {
+        font-size: 18px!important;
+        line-height: 22px;
+    }
     .lh-slider .et_pb_slide_image, .lh-slider .et_pb_slide_video {
         display: block!important;
     }

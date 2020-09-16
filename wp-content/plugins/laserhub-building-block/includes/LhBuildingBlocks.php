@@ -9,7 +9,7 @@ class LHBB_LhBuildingBlocks extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $gettext_domain = 'lhbb-lh-building-blocks';
+	public $gettext_domain = 'lh-building-blocks';
 
 	/**
 	 * The extension's WP Plugin name.

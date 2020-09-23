@@ -5,7 +5,6 @@ thumbs.db
 index.php
 license.txt
 xmlrpc.php
-docker-compose.yml
 mysql
 *.sh
 

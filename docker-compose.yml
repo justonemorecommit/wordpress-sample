@@ -1,0 +1,43 @@
+version: "3.1"
+
+services:
+  mysql:
+    image: mysql:5.6
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: laserhubcom
+      MYSQL_USER: laserhub
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - ./mysql:/var/lib/mysql
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - 8080:80
+    volumes:
+      - ./wp-content:/var/www/html/wp-content/
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_NAME: laserhubcom
+      WORDPRESS_DB_USER: laserhub
+      WORDPRESS_DB_PASSWORD: 123456
+      WORDPRESS_TABLE_PREFIX: 'dz0d5_'
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        // Webpack Dev Server proxy Fix
+        if (isset($$_SERVER) && key_exists("HTTP_X_FORWARDED_PORT", $$_SERVER)) {
+          $$_SERVER['HTTP_HOST']      = $$_SERVER["HTTP_X_FORWARDED_HOST"];
+          $$_SERVER['REQUEST_SCHEME'] = $$_SERVER["HTTP_X_FORWARDED_PROTO"];
+          $$_SERVER['SERVER_PORT']    = $$_SERVER["HTTP_X_FORWARDED_PORT"];
+          $$_SERVER['REMOTE_ADDR']    = $$_SERVER["HTTP_X_FORWARDED_FOR"];
+        }
+        define('WP_SITEURL', 'http://localhost:'.$$_SERVER['SERVER_PORT']);
+        define('WP_HOME',    'http://localhost:'.$$_SERVER['SERVER_PORT']);
+        define('WP_DEBUG',   true);
+

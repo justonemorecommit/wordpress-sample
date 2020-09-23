@@ -7,6 +7,7 @@ license.txt
 xmlrpc.php
 docker-compose.yml
 mysql
+*.sh
 
 # Ignore general wordpress files
 wp-admin/

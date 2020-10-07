@@ -61,7 +61,8 @@ body.admin-bar .page-header {
     opacity: 1;
     transform: translateY(0);
     top: 100%;
-    transition: opacity 0.3s, transform 0.3s, top 0s linear 0s;
+    transition: opacity 0.5s, transform 0.5s, top 0s linear 0s;
+    transition-delay: 0.3s;
 }
 
 .top-menu__icon {

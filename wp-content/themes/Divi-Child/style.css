@@ -1592,6 +1592,11 @@ body #lh_mobile_nav_menu {
     font-size: 16px;
     line-height: 1.45;
 }
+.lh-section a {
+    color: #000;
+    text-decoration: underline;
+}
+
 
 /* Paragraphs */
 .lh-section p {
@@ -2073,6 +2078,9 @@ a.lh-link-list-item {
         display: none;
     }
 }
+a.lh-link-list-item, .single a.lh-link-list-item {
+    text-decoration: none;
+}
 
 /*** Icons ***/
 
@@ -2218,10 +2226,9 @@ a.lh-link-list-item {
 .laserhub-tabs .et_pb_tabs_controls li {
     border-right: none;
     font-family: TTHoves-DemiBold, sans-serif;
+    height: 25px!important;
 }
 .laserhub-tabs a {
-    text-decoration: underline;
-    color: #000;
     font-weight: normal;
 }
 
@@ -2743,9 +2750,9 @@ a.lh-link-list-item {
     line-height: 1.7em;
     padding: .3em 1em;
     border-width: 2px;
-    background-color: #3ecb96;
+    background-color: #56DCAC;
     float: right;
-    border: 2px #3ecb96;
+    border: 2px #56DCAC;
     border-radius: 3px;
     font-size: 18px;
     color: #fff!important;
@@ -2761,6 +2768,9 @@ a.lh-link-list-item {
 .hs-form-booleancheckbox {
     margin-bottom: 0!important;
 }
+li.hs-form-booleancheckbox {
+    list-style-type: none;
+}
 .legal-consent-container .hs-form-booleancheckbox-display input {
     margin-top:6px;
 }
@@ -2768,7 +2778,6 @@ a.lh-link-list-item {
     margin-bottom: 0;
 }
 .hbspt-form a {
-    font-size: 12px;
     color: #000;
     text-decoration: underline;
 }
@@ -2787,8 +2796,8 @@ ul li.hs-form-booleancheckbox::before {content: none;}
     float: right;
     margin-top: -16px;
 }
-.hbspt-form p {
-    font-size: 12px;
+.hbspt-form p, .hbspt-form a {
+    font-size: 12px!important;
 }
 
 .hbspt-form ul.inputs-list {
@@ -2872,7 +2881,7 @@ ul li.hs-form-booleancheckbox::before {content: none;}
 .contact-full-width .et_pb_contact_field_half {width: 100%;}
 
 .et-pb-contact-message {color: #b3b3b3;}
-button.et_pb_contact_submit.et_pb_button {background: #3ecb96!important; font-size: 20px!important; color:#fff; border:none;}
+button.et_pb_contact_submit.et_pb_button {background: #56DCAC!important; font-size: 20px!important; color:#fff; border:none;}
 button.et_pb_contact_submit.et_pb_button:hover {border:none;}
 
 .et_pb_contact_form {margin-left:0!important;}
@@ -2922,6 +2931,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
     font-size: 18px!important;
     font-family: TThoves-DemiBold, sans-serif;
     text-decoration: none!important;
+    color: #000!important;
 }
 
 @media (max-width: 1023px) {
@@ -2938,15 +2948,23 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 .cta-text-section .lh-content-heading-wrap+.et_pb_row {
     padding-top: 16px;
 }
-.lh-button--ghost {
+.lh-cta__button .lh-button--primary {
+    background-color: #56DCAC!important;
+    border-color: #56DCAC!important;
+}
+.lh-cta__button .lh-button--primary:hover{
+    background-color: #90eac9!important;
+    border-color: #90eac9!important;
+}
+.lh-cta__button .lh-button--ghost {
     background: transparent !important;
-    color: #3ecb96 !important;
+    border-color: #56DCAC!important;
 }
 
-.lh-button--ghost:hover {
-    color: white !important;
+.lh-cta__button .lh-button--ghost:hover {
+    background-color: #90eac9!important;
+    border-color: #90eac9!important;
 }
-
 
 /*** Specs ***/
 
@@ -3060,10 +3078,6 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
     margin-top: -16px;
 }
 
-.lh-accordion__item {
-    border-bottom: 1px solid #E7E7E7;
-}
-
 .lh_accordion_child:last-child .lh-accordion__item {
     border-bottom: 0;
 }
@@ -3077,9 +3091,9 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
     position: relative;
     width: 100%;
     height: 100%;
-    font-size: 24px;
-    color: #303030;
-    padding: 16px 16px;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 10px;
     text-align: left;
     cursor: pointer;
 }
@@ -3091,7 +3105,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 }
 
 .lh-accordion__title img {
-    width: 18px;
+    width: 16px;
     transform: rotate(-90deg);
     margin: 3px 12px 0 -12px;
 }
@@ -3101,7 +3115,7 @@ body .lh-reg-form--vertical .et_pb_contact_field .input {
 .lh-accordion__content {
     display: none;
     font-size: 16px;
-    padding: 22px 0 48px 34px;
+    padding: 22px 0 22px 25px;
     margin: 0;
 }
 
@@ -3761,13 +3775,16 @@ a.leadin-button.leadin-button-primary {
 /*=======Table of contents=======*/
 .toc-section .toc-section__row {
     background-color: #F1F2F3;
-    padding: 35px 20px;
+    padding: 35px 0px;
     margin-top: 25px;
 }
 .toc-section__links a {
     color: #000;
     text-decoration: underline;
     text-underline-position: under;
+}
+.lh-section .toc-section__links ul {
+    padding: 0 30px;
 }
 .lh-section .toc-section__links ul li {
     margin: 0;

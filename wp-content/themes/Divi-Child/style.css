@@ -951,16 +951,16 @@ h1, h2, h3, h4, h5, h6, p, .et_quote_content blockquote p, .et_pb_slide_descript
 /**Blog-Navigation**/
 .blog-navi a {
     padding: 5px;
-    border: 2px solid #47d1a0;
-    /* margin: 0 auto; */
+    border: 3px solid #56DCAC;
+    font-family: TTHoves-DemiBold, sans-serif;
     font-size: 16px;
-    font-weight: 600;
     border-radius: 3px;
+    color: #000;
 }
 
 .blog-navi a:hover {
-    background-color: #47d1a0;
-    color: #fff;
+    background-color: #9AEACD;
+    border-color: #9AEACD;
 }
 
 
@@ -1595,6 +1595,7 @@ body #lh_mobile_nav_menu {
 .lh-section a {
     color: #000;
     text-decoration: underline;
+    text-underline-position: under;
 }
 
 
@@ -3676,6 +3677,9 @@ a.leadin-button.leadin-button-primary {
 .advance-wrapper {
     margin: 0!important;
     text-align: center!important;
+}
+.leadinModal.leadinModal-theme-default {
+    padding-top: 7%!important;
 }
 
 /*scroll up icon*/

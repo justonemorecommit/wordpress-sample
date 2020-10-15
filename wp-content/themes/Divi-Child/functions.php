@@ -151,3 +151,27 @@ function register_mobile_menu() {
   ) );
 }
 add_action( 'after_setup_theme', 'register_mobile_menu' );
+
+/**
+ * WPML - change language cookie
+ */
+function change_lang_cookie() {
+	if( defined('ICL_LANGUAGE_CODE') ){
+		setcookie('lhLocale', ICL_LANGUAGE_CODE, '' , '/', ".laserhub.com");
+	}
+}
+
+add_action( 'wpml_language_has_switched', 'change_lang_cookie' );
+
+/**
+ * Set language cookie
+ */
+function set_lang_cookie(){
+	$isset_lang_cookie = isset( $_COOKIE['lhLocale'] );
+
+	if ( !$isset_lang_cookie && defined('ICL_LANGUAGE_CODE') ) {
+		setcookie('lhLocale', ICL_LANGUAGE_CODE, '' , '/', ".laserhub.com");
+	}
+}
+
+add_action( 'wp_loaded', 'set_lang_cookie' );

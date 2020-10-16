@@ -2737,7 +2737,7 @@ a.lh-link-list-item, .single a.lh-link-list-item {
     max-width: 500px;
     margin: 0 auto;
     border: 5px solid #000;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 50px 50px 100px;
     position: relative;
 }

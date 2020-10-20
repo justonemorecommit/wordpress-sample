@@ -19,6 +19,8 @@ wp-content/*
 !wp-content/plugins
 wp-content/plugins/*
 !wp-content/plugins/laserhub-building-block
+!wp-content/plugins/wp-sync-db-master
+!wp-content/plugins/wp-sync-db-media-files-master
 !wp-content/themes
 wp-content/themes/*
 !wp-content/themes/Divi-Child

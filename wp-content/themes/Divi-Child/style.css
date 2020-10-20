@@ -2735,9 +2735,51 @@ a.lh-link-list-item, .single a.lh-link-list-item {
 
 /********Hubspot-forms*************/
 .hbspt-form {
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
+    border: 5px solid #000;
+    border-radius: 25px;
+    padding: 50px 50px 100px;
+    position: relative;
 }
+.hbspt-form:after{
+    content: url("images/hbspt-form/nl-form-devices-300.png");
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: -160px;
+    left: -70px;
+}
+
+.hbspt-form .hs-input{
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.hs-error-msgs {
+    padding: 0 !important;
+    list-style-type: none !important;
+    margin-bottom: 10px;
+}
+
+.hs-error-msgs li{
+    margin-bottom: 0 !important;
+}
+
+.hs-error-msgs li::marker{
+   display: none;
+}
+
+@media (max-width: 599.98px) {
+    .hbspt-form{
+        padding: 30px 10px 80px;
+    }
+
+    .hbspt-form:after{
+        display: none;
+    }
+}
+
 .hbspt-form label {
     display:none;
 }
@@ -2745,7 +2787,7 @@ a.lh-link-list-item, .single a.lh-link-list-item {
     display: block;
     font-size: 16px;
 }
-.hbspt-form .hs-button, .hbspt-form .hs-button:hover {
+.hbspt-form .hs-button{
     font-family: TThoves-DemiBold, sans-serif!important;
     font-weight: 500;
     line-height: 1.7em;
@@ -2753,11 +2795,25 @@ a.lh-link-list-item, .single a.lh-link-list-item {
     border-width: 2px;
     background-color: #56DCAC;
     float: right;
-    border: 2px #56DCAC;
+    border: 2px solid #56DCAC;
     border-radius: 3px;
     font-size: 18px;
-    color: #fff!important;
+    color: #000;
     cursor: pointer;
+    transition: all .2s;
+}
+.hbspt-form .hs-button:hover {
+    font-family: TThoves-DemiBold, sans-serif!important;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding: .3em 1em;
+    border-width: 2px;
+    float: right;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #90eac9;
+    border-color: #90eac9;
 }
 
 .hbspt-form .field .hs-input:not([type=checkbox]):not([type=radio]), .hs-custom-style>div>div:last-of-type .hs-input:not([type=checkbox]):not([type=radio]) {

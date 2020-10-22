@@ -2737,12 +2737,17 @@ a.lh-link-list-item, .single a.lh-link-list-item {
 .hbspt-form {
     max-width: 500px;
     margin: 0 auto;
+}
+.newsletter-form .hbspt-form {
+    max-width: 500px;
+    margin: 0 auto;
     border: 5px solid #000;
     border-radius: 25px;
     padding: 50px 50px 100px;
     position: relative;
+    margin-bottom: 120px;
 }
-.hbspt-form:after{
+.newsletter-form .hbspt-form:after{
     content: url("images/hbspt-form/nl-form-devices-300.png");
     width: 300px;
     height: 300px;
@@ -2771,11 +2776,11 @@ a.lh-link-list-item, .single a.lh-link-list-item {
 }
 
 @media (max-width: 599.98px) {
-    .hbspt-form{
+    .newsletter-form .hbspt-form{
         padding: 30px 10px 80px;
     }
 
-    .hbspt-form:after{
+    .newsletter-form .hbspt-form:after{
         display: none;
     }
 }

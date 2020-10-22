@@ -2778,6 +2778,7 @@ a.lh-link-list-item, .single a.lh-link-list-item {
 @media (max-width: 599.98px) {
     .newsletter-form .hbspt-form{
         padding: 30px 10px 80px;
+        margin-bottom: 0;
     }
 
     .newsletter-form .hbspt-form:after{

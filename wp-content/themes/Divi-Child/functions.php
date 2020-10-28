@@ -180,11 +180,11 @@ add_action( 'wp_loaded', 'set_lang_cookie' );
  * Set new Nalio A/B testing cookie
  */
 function set_nalio_cookie(){
-	$isset_nalio_cookie = isset( $_COOKIE['nabExperimentsWithPageViews'] );
+	$isset_nalio_cookie = isset( $_COOKIE['nabSegmentation'] );
 
 	if ( $isset_nalio_cookie ) {
 		$expire = time() + 60 * 60 * 24 * 30 * 4;
-		setcookie('nabExperimentsWithPageViewsWordPress', $_COOKIE['nabExperimentsWithPageViews'], $expire, '/', ".laserhub.com");
+		setcookie('nabSegmentationWordPress', $_COOKIE['nabSegmentation'], $expire, '/', ".laserhub.com");
 	}
 }
 

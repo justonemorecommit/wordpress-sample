@@ -24,3 +24,6 @@ wp-content/plugins/*
 !wp-content/themes
 wp-content/themes/*
 !wp-content/themes/Divi-Child
+
+pullFromGit.sh
+synLiveToStaging.sh

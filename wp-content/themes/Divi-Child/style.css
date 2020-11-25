@@ -3875,3 +3875,15 @@ a.leadin-button.leadin-button-primary {
     width: 16px;
     margin-right: 6px;
 }
+.et-pb-arrow-next, .et-pb-arrow-prev{
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 34px !important;
+    opacity: 1 !important;
+}
+.et_pb_slider .et-pb-arrow-next{
+    right: 10px !important;
+}
+.et_pb_slider .et-pb-arrow-prev{
+    left: : 10px !important;
+}
